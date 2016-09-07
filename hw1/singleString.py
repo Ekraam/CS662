@@ -18,7 +18,7 @@ for line in inpFile:
 singleString = singleString[:len(singleString)-5]
 inpFile.close()
 
-command = 'echo \''+singleString+'\' | /home/student/graehl/carmel/bin/carmel -sliO singleStateFSA > output.txt'
+command = 'echo \''+singleString+'\' | /home/student/graehl/carmel/bin/carmel -sliO spanish.fsa > output.txt'
 
 subprocess.check_output(command, shell=True)
 #os.system(command)
