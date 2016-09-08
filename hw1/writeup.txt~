@@ -1,0 +1,23 @@
+Writeup for HW1 - CS662
+Ekraam Sabir
+
+The sketches for FSAs and FSTs are included as separate image files.
+
+1. spanish.fsa
+
+   The FSA included in the submission has 235,644 transitions, 142899 states and 92746 paths (the number of words in the vocabulary) and a single cycle to repeat words with spaces - "_". The starting idea with which I built this fsa was to reuse the substrings as much as possible. The current submission uses only the matching prefixes. I also tried matching suffixes, which reduced the transitions by half, but created a lot of cycles in the FSA (which is undesirable as it leads to the possiblity of more paths - accepting words outside the vocabulary)
+
+   Some thoughts on improvement - While there may be a few heuristics to improve the current submission (reuse suffixes that only go forward in the fsa etc.), my best guess of an algorithm to create a more compact FSA for the given vocabulary is to work along the lines of dijsktras algorithm. Specifically, create a graph with forward connecting edges with all possible conenctions for depth = maximum occuring word length. Use Dijkstra's to iterate through the vocabulary list and come up with paths that are used atleast once. The remaining would be redundant and can be removed.
+
+2. vowel-deleter.fst
+
+   The submission for this follows the question to the word. Terminate a vowel with prejudice.
+
+   Input from the question: ' "G" "A" "T" "O" "_" "A" "Q" "U" "I" '
+   Output from the fsa: "G" "T" "_" "Q"
+
+   Backward (vowel restoration)
+
+   Input from the qeustion: ' "P" "R" "R" "_" "Q" '
+   Top 2 outputs when using the k flag: 
+       	 	      	    	  	 

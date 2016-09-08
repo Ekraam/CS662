@@ -1,0 +1,82 @@
+Writeup for HW1 - CS662
+Ekraam Sabir
+
+The sketches for FSAs and FSTs are included as separate image files.
+
+1. spanish.fsa
+
+   The FSA included in the submission has 235,644 transitions, 142899 states and 92746 paths (the number of words in the vocabulary) and a single cycle to repeat words with spaces - "_". The starting idea with which I built this fsa was to reuse the substrings as much as possible. The current submission uses only the matching prefixes. I also tried matching suffixes, which reduced the transitions by half, but created a lot of cycles in the FSA (which is undesirable as it leads to the possiblity of more paths - accepting words outside the vocabulary)
+
+   Some thoughts on improvement - While there may be a few heuristics to improve the current submission (reuse suffixes that only go forward in the fsa etc.), my best guess of an algorithm to create a more compact FSA for the given vocabulary is to work along the lines of dijsktras algorithm. Specifically, create a graph with forward connecting edges with all possible conenctions for depth = maximum occuring word length. Use Dijkstra's to iterate through the vocabulary list and come up with paths that are used atleast once. The remaining would be redundant and can be removed.
+
+2. vowel-deleter.fst
+
+   The submission for this follows the question to the word. Terminate a vowel with prejudice.
+
+   Forward
+
+   Input from the question: ' "G" "A" "T" "O" "_" "A" "Q" "U" "I" '
+   Output from the fsa: "G" "T" "_" "Q"
+
+   Backward (vowel restoration)
+
+   Input from the qeustion: ' "P" "R" "R" "_" "Q" '
+   Top few outputs when using the k flag: "P" "R" "R" "_" "Q"
+       	   	   	      	    	  "P" "R" "R" "_" "Q" "O"
+   A random output down the order: "I" "I" "P" "I" "I" "R" "R" "_" "E" "E" "E" "E" "Q" "U" "A"
+
+   While this may be called a vowel-restorer, it adds vowels for no rhyme and reason. An improvement to this would be the question 6 later down, where  maybe we can condition the restoration on probabilities based off the vocabulary words/bigrams.
+
+3. space-deleter.fst
+
+   This is very similar to the vowel-deleter in implementation, except it removes spaces ("_").
+
+   Forward
+   
+   Input: ' "P" "R" "R" "_" "Q" '
+   Output: "P" "R" "R" "Q"
+
+   Backward
+
+   Input: "P" "R" "R" "Q"
+   Output: "P" "R" "R" "Q" "_"
+   
+   A random output further down the order: "P" "R" "_" "_" "_" "_" "R" "_" "_" "_" "_" "_" "Q" "_" "_" "_"
+
+   A backward input of "P" "R" "R" "_" "Q" produces no valid path indicating that the existence of spaces is not possible in the output.
+
+4. typo.fst
+
+   The structure of this fst differs somewhat from the previous two. Mainly because it has to gurantee a few things: every third character has to be replaced, spaces don't count and it still has to consider that string length may not be in multiples of 3.
+
+   I also involved the use of probability to generate the typos. Though it should not have been necessary for equally likely events.
+
+   Forward
+
+   Input: ' "G" "A" "T" "O" "_" "A" "Q" "U" "I" '
+   Outputs: "G" "A" "Y" "O" "_" "A" "W" "U" "I"
+   	    "G" "A" "G" "O" "_" "A" "A" "U" "I"
+	    "G" "A" "Y" "O" "_" "A" "A" "U" "I"
+
+   Backward
+
+   Input: '"G" "A" "T" "O" "_" "A" "Q" "U" "I" '
+   Output: "G" "A" "Y" "O" "_" "A" "W" "U" "I"
+   	   "G" "A" "Y" "O" "_" "A" "A" "U" "I"
+   	   "G" "A" "R" "O" "_" "A" "A" "U" "I"
+
+   An output string can also be its own input as shown in the first output for both forward and backward.
+
+5. spell.fst
+
+   This fst seems more like implementing the given rules for the converion. I added equal probabilities in the cases where we have the liberty to choose the alphabets to be assigned to the phoneme. While it doesn't make any difference in the current case, it can be used to bias the results for a bettter output.
+
+   Forward
+   
+   Input: 
+   Output: 
+
+   Backward:
+   
+   Input:
+   Output:
