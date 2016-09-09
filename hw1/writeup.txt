@@ -3,6 +3,8 @@ Ekraam Sabir
 
 The sketches for FSAs and FSTs are included as separate image files.
 
+Beyond the immediate observations listed in the sections below, I gained familiarity with carmel.
+
 1. spanish.fsa
 
    The FSA included in the submission has 235,644 transitions, 142899 states and 92746 paths (the number of words in the vocabulary) and a single cycle to repeat words with spaces - "_". The starting idea with which I built this fsa was to reuse the substrings as much as possible. The current submission uses only the matching prefixes. I also tried matching suffixes, which reduced the transitions by half, but created a lot of cycles in the FSA (which is undesirable as it leads to the possiblity of more paths - accepting words outside the vocabulary)
@@ -73,10 +75,70 @@ The sketches for FSAs and FSTs are included as separate image files.
 
    Forward
    
-   Input: 
-   Output: 
+   Input: ' "pho-k" "pho-a" "pho-y" "pho-e" '
+   Output: C Y E
+   	   C Y E H
 
    Backward:
    
-   Input:
-   Output:
+   Input: ' "C" "A" "L" "L" "E" '
+   Outputs: pho-k pho-u pho-a pho-l pho-l pho-e
+   	    pho-k pho-r pho-a pho-l pho-l pho-e
+	    pho-k pho-o pho-a pho-l pho-l pho-e
+	    pho-k pho-l pho-a pho-l pho-l pho-e
+	    pho-k pho-a pho-a pho-l pho-l pho-e
+
+6. Improvements using spanish.fsa
+
+   My understanding of this question is that we can use spanish.fsa to filter out meaningless outputs that we get from the fsts.
+
+   Some of the improvements when we cascade spanish.fsa and filter out the unwanted sequences generated in the restoration process are listed in the following examples:
+
+   i. vowel-deleter (backward - vowel restoration)
+
+   input: "B" "N" "D" "N"
+   output without spanish.fsa: "B" "N" "D" "N"
+   	  	  	       "B" "N" "D" "N" "O"
+			       "B" "N" "D" "N"
+			       "B" "N" "D" "N" "O" "O"
+   output with spanish.fsa: "A" "B" "U" "N" "D" "A" "N"
+
+   ABUNDAN is a word in spanishvocab while BNDNO or BNDNOO are not.
+
+   ii. space-deleter.fst (backward - space insertion)
+
+   input: "A" "B" "A"
+   output without spanish.fsa: "_" "_" "A" "_" "B" "_" "A" "_"
+   	  	  	       "A" "B" "A"
+   output with spanish.fsa: "A" "_" "B" "A"
+   	       		    "A" "B" "A"
+			    "A" "B" "_" "A"
+
+   A, AB, ABA and BA are all valid words in spanishvocab
+
+   iii. typo.fst (backward typo correction)
+
+   input: "A" "B" "S"
+   output without spanish.fsa: "A" "B" "Z"
+   	  	  	       "A" "B" "S"
+			       "A" "B" "D"
+			       "A" "B" "S"
+			       "A" "B" "W"
+   output with spanish.fsa: "A" "B" "D"
+   	       		    "A" "B" "S"
+			    "A" "B" "D"
+			    "A" "B" "S"
+			    "A" "B" "A"
+
+   ABA, ABD, ABS are valid words, while ABZ and ABW are not
+
+   iv. spell.fst (forward phonemeToText)
+
+   input: '"pho-k" "pho-u" "pho-a" "pho-l" "pho-l" "pho-e"'
+   output without spanish.fsa: C A L L E
+   	  	  	       C A L L E H
+			       C A L L H E
+			       C A L L E H H
+   output with spanish.fsa: C A L L E
+
+   While H has been denoted as silent (doing nothing) in the spanish phoneme rules, it makes more sense to have a word with the right spelling - without interspersed with a lot of unnecessary H.
