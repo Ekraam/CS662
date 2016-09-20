@@ -1,0 +1,17 @@
+sed
+cut
+tr
+sort
+uniq
+cat
+less
+paste
+awk
+
+--
+kenlm
+srilm
+
+--
+paste file3.txt tmp tmp2 | sort | uniq -c | sort -gr | less
+--

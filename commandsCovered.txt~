@@ -1,0 +1,13 @@
+sed
+cut
+tr
+sort
+uniq
+cat
+less
+paste
+awk
+
+--
+kenlm
+srilm
