@@ -1,0 +1,1 @@
+inpFile = open('./train-data')

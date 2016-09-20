@@ -1,0 +1,98 @@
+from __future__ import division
+
+inpFile = open('./train-data', 'r')
+outFile = open('./bigram.wfsa', 'w')
+
+lines = inpFile.readlines()
+
+uniFreqDict = {}
+uniProbDict = {}
+biFreqDict = {}
+biProbDict = {}
+uniqueTags = {}
+
+#create dictionaries with frequency of unigram and bigram tags
+line = lines[0].split('/')
+tag = line[1]
+tag = tag.strip()
+uniFreqDict[tag] = 1
+uniCount = 1
+stateCounter = 0
+uniqueTags[tag] = stateCounter
+stateCounter += 1
+
+for i in range(1, len(lines)):
+    line = lines[i-1].split('/')
+    tag1 = line[1]
+    tag1 = tag1.strip()
+
+    line = lines[i].split('/')
+    tag2 = line[1]
+    tag2 = tag2.strip()
+
+    if tag2 not in uniqueTags:
+        uniqueTags[tag2] = stateCounter
+        stateCounter += 1
+
+    if tag1 is '.':
+        uniCount += 1
+        if tag2 in uniFreqDict:
+            uniFreqDict[tag2] += 1
+        else:
+            uniFreqDict[tag2] = 1
+
+    else:
+        if tag1 in biFreqDict:
+            
+            if tag2 in biFreqDict[tag1]:
+                biFreqDict[tag1][tag2] += 1
+            else:
+                biFreqDict[tag1][tag2] = 1
+
+        else:
+            biFreqDict[tag1] = {}
+            biFreqDict[tag1][tag2] = 1
+
+#convert the freq to probability
+for key,val in uniFreqDict.items():
+    prob = val/uniCount
+    uniProbDict[key] = prob
+
+for key,val in biFreqDict.items():
+    totalCount = 0
+    for key2,val2 in biFreqDict[key].items():
+        totalCount += val2
+
+    biProbDict[key] = {}
+
+    for key2,val2 in biFreqDict[key].items():
+        prob = val2/totalCount
+        biProbDict[key][key2] = prob
+
+#build the wfst
+
+outFile.write('END\n')
+
+for key,val in uniProbDict.items():
+    targetState = uniqueTags[key]
+    if key is '.':
+        outFile.write('(START (END "'+key+'" '+str(val)+'))\n')
+    else:
+        outFile.write('(START ('+str(targetState)+' "'+key+'" '+str(val)+'))\n')
+
+for key,val in biProbDict.items():
+    for key2,val2 in biProbDict.items():
+        
+        if key is '.':
+            print('Something went wrong with the dictionary - found a .')
+        
+        startState = uniqueTags[key]
+        endState = uniqueTags[key2]
+
+        if key2 is '.':
+            outFile.write('('+str(startState)+' (END "'+key2+'" '+str(val2)+'))\n')
+        else:
+            outFile.write('('+str(startState)+' ('+str(endState)+' "'+key2+'" '+str(val2)+'))\n')
+
+inpFile.close()
+outFile.close()
