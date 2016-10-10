@@ -1,0 +1,47 @@
+# This code works for the transliteration problem
+
+import itertools
+
+inpFile = open('./epron-jpron-unsupervised.data', 'r')
+inpLines = inpFile.readlines()
+
+
+# alignment section
+for i in range(0, len(inpLines), 2):
+    
+    eline = inpLines[i]
+    jline = inpLines[i+1]
+
+    eline = eline.split()
+    jline = jline.split()
+
+    maxNum = len(eline)
+    jNum = len(jline)
+
+    extraAlign = jNum - maxNum
+    listofNum = []
+
+    for num in range(1, maxNum+1):
+        for iter in range(extraAlign):
+            listofNum.extend([num])
+
+    listAlign = list(itertools.combinations(listofNum, extraAlign))
+    uniqAlign = set(listAlign)
+    listAlign = list(uniqAlign)
+
+    for perm in listAlign:
+
+        validAlign = []
+        for num in range(1, maxNum+1):
+            validAlign.extend([num])
+
+        validAlign.extend(perm)
+
+        validAlign = sorted(validAlign, key=int)
+        
+        if i<10:
+            print(eline)
+            print(jline)
+            print(validAlign)
+
+inpFile.close()
