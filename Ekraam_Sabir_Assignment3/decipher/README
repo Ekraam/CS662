@@ -1,0 +1,8 @@
+Decipherment
+
+Run the code as:
+
+$python forBackAlgo.py
+
+make sure the necessary data files are present in the same folder.
+I have already included them in this folder for convenience.
