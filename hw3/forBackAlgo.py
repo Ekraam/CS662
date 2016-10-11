@@ -1,0 +1,65 @@
+# this code uses the forward-backward implementation
+# for decipherment
+
+from __future__ import division
+
+engData = open('./english.data', 'r')
+engLines = engData.readlines()
+
+bigramProb = {}
+bigramFreq = {}
+unigramProb = {}
+
+charlist = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ '
+
+# unigram probability
+for char in charlist:
+    unigramProb[char] = 1/len(charlist)
+
+# bigram probabilities
+for char in charlist:
+    
+    bigramProb[char] = {}
+    bigramFreq[char] = {}
+
+    for char2 in charlist:
+        bigramProb[char][char2] = 0
+        bigramFreq[char][char2] = 0
+
+for i in range(len(engLines)):
+    
+    line = engLines[i]
+    line = line.strip()
+    line = ' '+line+' '
+    
+    for j in range(0,len(line)-1):
+        char1 = line[j]
+        char2 = line[j+1]
+        bigramFreq[char1][char2] += 1
+
+for char1, target in bigramFreq.items():
+    totalCount = 0
+    for char2, count in target.items():
+        totalCount += count
+        
+    for char2, count in target.items():
+        bigramProb[char1][char2] = count/totalCount
+
+# EM section with forward backward
+
+channelProb = {}
+
+for char in charlist:
+    
+    channelProb[char] = {}
+    for char2 in charlist:
+        if char!=' ' and char2!=' ':
+            channelProb[char][char2] = 1/26
+        elif char==' ' and char2==' ':
+            channelProb[char][char2] = 1
+        else:
+            channelProb[char][char2] = 0
+
+inpLine = 'MTBS SQTVTCEQZV'
+lenLine = len(inpLine)
+

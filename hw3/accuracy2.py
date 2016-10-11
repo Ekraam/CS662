@@ -1,0 +1,32 @@
+# this script is for q2
+# checking the accuracy from the files
+
+from __future__ import division
+
+hypFile = open('./tagging.hyp', 'r')
+refFile = open('./tagging.key', 'r')
+
+hypLines = hypFile.readlines()
+refLines = refFile.readlines()
+
+tagCount = 0
+corrTagCount = 0
+
+for i in range(len(hypLines)):
+    
+    hypLine = hypLines[i]
+    refLine = refLines[i]
+
+    hypLine = hypLine.strip()
+    refLine = refLine.strip()
+
+    hypLine = hypLine.split()
+    refLine = refLine.split()
+
+    for j in range(len(hypLine)):
+
+        tagCount += 1
+        if hypLine[j]==refLine[j]:
+            corrTagCount += 1
+
+print('Tagging accuracy '+str(100*corrTagCount/tagCount))
