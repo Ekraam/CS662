@@ -2,18 +2,27 @@
 
 from __future__ import division
 import fileinput
+import pickle
 
 outFile = open('./train.trees.pre.unk.rules', 'w')
 
 grammar = {}
+wordList = []
+N = []
 
 def parseTree(Line):
+
+    global wordList
+    global grammar
+    global N
 
     # Non terminal term
     if Line.count('(')>=2:
         Line = Line[1:]
         Line = Line[:len(Line)-1]
         label = Line[:Line.find(' ')+1]
+        label = label.strip()
+        N.extend([label])
         Line = Line[Line.find('('):]
         counter = 0
         pos = 0
@@ -39,7 +48,8 @@ def parseTree(Line):
         line1 = Line[:midPoint+1]
         line2 = Line[midPoint+2:]
         terms = parseTree(line1)
-        terms = terms+' '+parseTree(line2)
+        terms = terms.strip()
+        terms = terms+' '+parseTree(line2).strip()
                 
         # add to grammar
         if label in grammar:
@@ -65,7 +75,11 @@ def parseTree(Line):
 
         # add count in dictionary
         label = terms[0]
+        label = label.strip()
         word  = terms[1]
+        word = word.strip()
+        wordList.extend([word])
+        N.extend([label])
         if label in grammar:
             if word in grammar[label]:
                 grammar[label][word] += 1
@@ -105,4 +119,8 @@ for label, dictionary in grammar.items():
 
 outFile.close()
 
-print('Most frequent rule is '+maxLabel.strip()+' -> '+' '.join(maxTerms.split())+' with a frequency of '+str(maxCount))
+print('Most frequent rule is '+maxLabel+' -> '+maxTerms+' with a frequency of '+str(maxCount))
+
+pickle.dump(grammar, open('grammar.pkl', 'wb'))
+pickle.dump(list(set(wordList)), open('wordList.pkl', 'wb'))
+pickle.dump(list(set(N)), open('N.pkl', 'wb'))
