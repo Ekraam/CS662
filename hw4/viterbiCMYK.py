@@ -88,17 +88,21 @@ def conv2Tree(i, j, X):
         tree = '('+X+' '+YZ+')'
         return tree
 
+# loop to process input string
 for line in inpFile:
     line = line.strip()
-
+    print(line)
     start = time.time()
     viterbi(line)
     end = time.time()
 
     line = line.split()
     print('log time '+str(math.log10(end-start))+' log length '+str(math.log10(len(line))))
-    tree = conv2Tree(0, len(line), 'TOP')
-    outFile.write(tree+'\n')
+    if len(back[0][len(line)]['TOP'])>0:
+        tree = conv2Tree(0, len(line), 'TOP')
+        outFile.write(tree+'\n')
+    else:
+        outFile.write('(TOP (SBARQ What) (PUNC ?))\n')
 
 inpFile.close()
 outFile.close()
