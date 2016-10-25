@@ -4,6 +4,7 @@
 import pickle
 import math
 import time
+import matplotlib.pyplot as plt
 
 grammar = pickle.load(open('./grammar.pkl', 'rb'))
 wordList = pickle.load(open('./wordList.pkl', 'rb'))
@@ -89,6 +90,8 @@ def conv2Tree(i, j, X):
         return tree
 
 # loop to process input string
+logTime = []
+logLength = []
 for line in inpFile:
     line = line.strip()
     print(line)
@@ -97,12 +100,60 @@ for line in inpFile:
     end = time.time()
 
     line = line.split()
-    print('log time '+str(math.log10(end-start))+' log length '+str(math.log10(len(line))))
+
+    logTime.extend([math.log10(end-start)])
+    logLength.extend([math.log10(len(line))])
+
     if len(back[0][len(line)]['TOP'])>0:
         tree = conv2Tree(0, len(line), 'TOP')
         outFile.write(tree+'\n')
+        print('log(time) '+str(math.log10(end-start))+' log(length) '+str(math.log10(len(line)))+' log(prob) '+str(best[0][len(line)]['TOP']))
     else:
-        outFile.write('(TOP (SBARQ What) (PUNC ?))\n')
+        # making probability -inf since a full path was not found
+        print('log(time) '+str(math.log10(end-start))+' log(length) '+str(math.log10(len(line)))+' log(prob) -inf ')
+
+        print('partial output on this one')
+        # get best element in 0 row
+        bestProb = float('-inf')
+        colpos = 0
+        collabel = ''
+        leave = False
+        for j in range(len(line), 0, -1):
+            for key,val in back[0][j].items():
+                if len(val)>0:
+                    if best[0][j][key]>bestProb:
+                        colpos = j
+                        collabel = key
+                        bestProb = best[0][j][key]
+                        leave = True
+            if leave:
+                break
+        line1 = conv2Tree(0, colpos, collabel)
+        
+        # get best element in last col
+        bestProb = float('-inf')
+        rowpos = 0
+        rowlabel = ''
+        leave = False
+        for i in range(0, len(line)):
+            for key,val in back[i][len(line)].items():
+                if len(val)>0:
+                    if best[i][len(line)][key]>bestProb:
+                        rowpos = i
+                        rowlabel = key
+                        bestProb = best[i][len(line)][key]
+                        leave = True
+            if leave:
+                break
+        line2 = conv2Tree(rowpos, len(line), rowlabel)
+
+        outFile.write('(TOP '+line1+' '+line2+')\n')
 
 inpFile.close()
 outFile.close()
+
+plt.plot(logLength, logTime)
+plt.xlabel('log(length)')
+plt.ylabel('log(time)')
+plt.grid(True)
+plt.show()
