@@ -10,8 +10,8 @@ grammar = pickle.load(open('./grammar.pkl', 'rb'))
 wordList = pickle.load(open('./wordList.pkl', 'rb'))
 N = pickle.load(open('./N.pkl', 'rb'))
 
-inpFile = open('./dev.strings', 'r')
-outFile = open('./dev.parses', 'w')
+inpFile = open('./test.strings', 'r')
+outFile = open('./test.parses', 'w')
 
 best = {}
 back = {}

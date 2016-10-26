@@ -56,10 +56,10 @@ def parseTree(Line):
             if terms in grammar:
                 grammar[label][terms] += 1
             else:
-                grammar[label][terms] = 1
+                grammar[label][terms] = 1 # to keep it > smoothened prob
         else:
             grammar[label] = {}
-            grammar[label][terms] = 1
+            grammar[label][terms] = 1 # to keep it > smoothened prob
             
         # return
         if 'TOP' in label:
@@ -95,8 +95,13 @@ for line in fileinput.input():
     line = line.strip()
     parseTree(line)
 
+# make the lists have unique elements
+N = list(set(N))
+wordList = list(set(wordList))
+
 # add one smoothing (allow every rule to be possible with very little probability)
-print('Starting add 1 smoothing will take long time')
+print('Starting add 1 smoothing will take couple of minutes')
+
 # labels to 2 terms (non terminal rules)
 for label, dictionary in grammar.items():
     for label1 in N:
@@ -105,14 +110,15 @@ for label, dictionary in grammar.items():
                 if label2 is not 'TOP':
                     term = label1+' '+label2
                     if term not in dictionary.keys():
-                        grammar[label][term] = 1
+                        grammar[label][term] = 1e-10
 print('2 term smoothing done')
+
 # labels to 1 term/word (terminal rules)
 for label, dictionary in grammar.items():
-    if label is not 'TOP':
+    if label is 'SYM':
         for word in wordList:
-            if word not in dictionary.keys():
-                grammar[label][word] = 1
+            if word not in dictionary.keys() and len(word)==1:
+                grammar[label][word] = 1e-10
 print('1 term smoothing done')
 
 # convert to probability
@@ -142,5 +148,5 @@ outFile.close()
 print('Most frequent rule is '+maxLabel+' -> '+maxTerms+' with a frequency of '+str(maxCount))
 
 pickle.dump(grammar, open('grammar_smooth.pkl', 'wb'))
-pickle.dump(list(set(wordList)), open('wordList_smooth.pkl', 'wb'))
-pickle.dump(list(set(N)), open('N_smooth.pkl', 'wb'))
+pickle.dump(wordList, open('wordList_smooth.pkl', 'wb'))
+pickle.dump(N, open('N_smooth.pkl', 'wb'))

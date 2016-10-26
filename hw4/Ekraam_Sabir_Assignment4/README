@@ -1,0 +1,17 @@
+# this is readme for assignment 4
+# I am making a late submission by possibly 1 hr or so
+# (The final parse on test.strings is taking unexpectedly long 1hr 45 mins)
+
+# to learn grammar run the script
+
+$ python learnGrammar.py train.parse.pre.unk > train.parse.pre.unk.rules
+$ python learnGrammar_smooth.py train.parse.pre.unk > train.parse.pre.unk.rules_smooth # modification 1 also the best parser
+$ python learnGrammar_smooth_unk.py train.parse.pre.unk > train.parse.pre.unk.rules_smooth_unk # modification 2
+
+# to run parsing
+
+$ python viterbiCMYK.py
+$ python viterbiCMYK_smooth.py       # modification 1 and also the best parser
+$ python viterbiCMYK_smooth_unk.py   # modification 2
+
+# run all commands in the same folder with dependency scripts
