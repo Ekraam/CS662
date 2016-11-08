@@ -1,0 +1,5 @@
+q
+q.TOP(x0:) -> q.x0
+q.NP(x0: x1:) -> t.x0 t.x1
+t.DT -> the
+t.NNS -> flights

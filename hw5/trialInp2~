@@ -1,0 +1,1 @@
+S(VP(VB("List") NP(NP(DT("the") NNS("flights")) PP(IN("from") NP(NNP("Baltimore"))) PP(TO("to") NP(NNP("Seattle"))) SBAR(WHNP(WDT("that")) S(VP(VBP("stop") PP(IN("in") NP(NNP("Minneapolis")))))))))

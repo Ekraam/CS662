@@ -1,0 +1,14 @@
+q
+q.PP(x0: x1:) -> q.x0 q.x1
+q.IN(x0:) -> t.x0
+t."in" -> "en"
+q.NP(x0:) -> q.x0
+q.NNP(x0:) -> t.x0
+t."Minneapolis" -> "MN"
+q.VP(x0: x1:) -> q.x0 q.x1
+q.VBP(x0:) -> t.x0
+t."stop" -> "se"
+q.S(x0:) -> q.x0
+q.TOP(x0: x1:) -> q.x0 q.x1
+q.PUNC(x0:) -> t.x0
+t."." -> "."

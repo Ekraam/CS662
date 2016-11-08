@@ -1,0 +1,13 @@
+%% file: trial %%
+%q
+%q.TOP(x1:) -> q.x1
+%q.NP(x1: x2:) -> t.x1 t.x2
+%t.DT -> the
+%t.NNS -> flights
+q
+q.TOP(x0:) -> q.x0
+q.NP(x0: x1:) -> q.x0 q.x1
+q.DT(x0:) -> q.x0
+q.NNS(x0:) -> q.x0
+q.the -> los
+q.flights -> vuelos

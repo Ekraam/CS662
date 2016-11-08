@@ -1,0 +1,31 @@
+q
+q.TOP(x0: x1:) -> q.x0 q.x1
+q.S(x0:) -> q.x0
+q.VP(x0: x1:) -> q.x0 q.x1
+q.VBP(x0:) -> t.x0
+t."stop" -> "se"
+q.PP(x0: x1:) -> q.x0 q.x1
+q.IN(x0:) -> t.x0
+t."in" -> "en"
+q.NP(x0:) -> q.x0
+q.NNP(x0:) -> t.x0
+t."Minneapolis" -> "Minneapolis"
+q.PUNC(x0:) -> t.x0
+t."." -> "."
+q.NP(x0: x1:) -> q.x0 q.x1
+q.NP(x0: x1: x2: x3:) -> q.x0 q.x1 q.x2 q.x3
+q.WHNP(x0:) -> q.x0
+q.WDT(x0:) -> t.x0
+t."that" -> "que"
+q.SBAR(x0: x1:) -> q.x0 q.x1
+q.TO(x0:) -> t.x0
+t."to" -> "a"
+t."Seattle" -> "Seattle"
+t."from" -> "de"
+t."Baltimore" -> "Baltimore"
+q.DT(x0:) -> t.x0
+t."the" -> "los"
+q.NNS(x0:) -> t.x0
+t."flights" -> "vuelos"
+q.VB(x0:) -> t.x0
+t."List" -> "Enumerar"
