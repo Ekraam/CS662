@@ -1,0 +1,1505 @@
+q
+q.VBG(x0:"arriving") -> t.x0 # 0.361111111111
+q.VBG(x0:"Leaving") -> t.x0 # 0.111111111111
+q.VBG(x0:"departing") -> t.x0 # 0.0833333333333
+q.VBG(x0:"Arriving") -> t.x0 # 0.0277777777778
+q.VBG(x0:"returning") -> t.x0 # 0.0277777777778
+q.VBG(x0:"Departing") -> t.x0 # 0.0555555555556
+q.VBG(x0:"making") -> t.x0 # 0.0277777777778
+q.VBG(x0:"Traveling") -> t.x0 # 0.0277777777778
+q.VBG(x0:"living") -> t.x0 # 0.0277777777778
+q.VBG(x0:"leaving") -> t.x0 # 0.25
+q.SBAR(x0:S) -> q.x0 # 0.0434782608696
+q.SBAR(x0:WHNP x1:SQ) -> q.x0 q.x1 # 0.0434782608696
+q.SBAR(x0:WHNP x1:S) -> q.x0 q.x1 # 0.913043478261
+q.VBD(x0:"meant") -> t.x0 # 1.0
+q.ADJP(x0:RBS x1:JJ) -> q.x0 q.x1 # 0.0526315789474
+q.ADJP(x0:JJS) -> q.x0 # 0.0526315789474
+q.ADJP(x0:JJR) -> q.x0 # 0.105263157895
+q.ADJP(x0:JJ) -> q.x0 # 0.578947368421
+q.ADJP(x0:RB x1:RB x2:PP) -> q.x0 q.x1 q.x2 # 0.0526315789474
+q.ADJP(x0:JJ x1:PP) -> q.x0 q.x1 # 0.0526315789474
+q.ADJP(x0:JJR x1:PP) -> q.x0 q.x1 # 0.105263157895
+q.TOP(x0:S x1:PUNC) -> q.x0 q.x1 # 0.324093816631
+q.TOP(x0:ADJP x1:PUNC) -> q.x0 q.x1 # 0.00213219616205
+q.TOP(x0:SBARQ x1:PUNC) -> q.x0 q.x1 # 0.217484008529
+q.TOP(x0:SQ x1:PUNC) -> q.x0 q.x1 # 0.044776119403
+q.TOP(x0:INTJ x1:PUNC) -> q.x0 q.x1 # 0.00426439232409
+q.TOP(x0:FRAG x1:PUNC) -> q.x0 q.x1 # 0.394456289979
+q.TOP(x0:NP x1:PUNC) -> q.x0 q.x1 # 0.00639658848614
+q.TOP(x0:SBAR x1:PUNC) -> q.x0 q.x1 # 0.00213219616205
+q.TOP(x0:X x1:PUNC) -> q.x0 q.x1 # 0.00426439232409
+q.VBN(x0:"used") -> t.x0 # 0.25
+q.VBN(x0:"served") -> t.x0 # 0.75
+q.JJR(x0:"more") -> t.x0 # 0.166666666667
+q.JJR(x0:"better") -> t.x0 # 0.333333333333
+q.JJR(x0:"less") -> t.x0 # 0.5
+q.VBP(x0:"leave") -> t.x0 # 0.0964912280702
+q.VBP(x0:"make") -> t.x0 # 0.0175438596491
+q.VBP(x0:"serve") -> t.x0 # 0.0438596491228
+q.VBP(x0:"am") -> t.x0 # 0.00877192982456
+q.VBP(x0:"need") -> t.x0 # 0.140350877193
+q.VBP(x0:"depart") -> t.x0 # 0.0614035087719
+q.VBP(x0:"go") -> t.x0 # 0.0789473684211
+q.VBP(x0:"plan") -> t.x0 # 0.00877192982456
+q.VBP(x0:"stop") -> t.x0 # 0.0350877192982
+q.VBP(x0:"accept") -> t.x0 # 0.00877192982456
+q.VBP(x0:"arrive") -> t.x0 # 0.0350877192982
+q.VBP(x0:"have") -> t.x0 # 0.0614035087719
+q.VBP(x0:"'re") -> t.x0 # 0.00877192982456
+q.VBP(x0:"fly") -> t.x0 # 0.0175438596491
+q.VBP(x0:"are") -> t.x0 # 0.236842105263
+q.VBP(x0:"do") -> t.x0 # 0.0438596491228
+q.VBP(x0:"mean") -> t.x0 # 0.00877192982456
+q.VBP(x0:"want") -> t.x0 # 0.0263157894737
+q.VBP(x0:"prefer") -> t.x0 # 0.00877192982456
+q.VBP(x0:"'m") -> t.x0 # 0.00877192982456
+q.VBP(x0:"Are") -> t.x0 # 0.00877192982456
+q.VBP(x0:"Do") -> t.x0 # 0.0350877192982
+q.WDT(x0:"What") -> t.x0 # 0.575757575758
+q.WDT(x0:"what") -> t.x0 # 0.00757575757576
+q.WDT(x0:"that") -> t.x0 # 0.159090909091
+q.WDT(x0:"Which") -> t.x0 # 0.25
+q.WDT(x0:"which") -> t.x0 # 0.00757575757576
+q.SYM(x0:"P") -> t.x0 # 0.166666666667
+q.SYM(x0:"Q") -> t.x0 # 0.166666666667
+q.SYM(x0:"D") -> t.x0 # 0.166666666667
+q.SYM(x0:"H") -> t.x0 # 0.166666666667
+q.SYM(x0:"slash") -> t.x0 # 0.166666666667
+q.SYM(x0:"A") -> t.x0 # 0.166666666667
+q.JJ(x0:"first") -> t.x0 # 0.128205128205
+q.JJ(x0:"Early") -> t.x0 # 0.0128205128205
+q.JJ(x0:"eighth") -> t.x0 # 0.0128205128205
+q.JJ(x0:"possible") -> t.x0 # 0.0128205128205
+q.JJ(x0:"Next") -> t.x0 # 0.0128205128205
+q.JJ(x0:"expensive") -> t.x0 # 0.0128205128205
+q.JJ(x0:"Last") -> t.x0 # 0.025641025641
+q.JJ(x0:"other") -> t.x0 # 0.025641025641
+q.JJ(x0:"same") -> t.x0 # 0.0128205128205
+q.JJ(x0:"direct") -> t.x0 # 0.0128205128205
+q.JJ(x0:"Daily") -> t.x0 # 0.0128205128205
+q.JJ(x0:"available") -> t.x0 # 0.0128205128205
+q.JJ(x0:"ninth") -> t.x0 # 0.0128205128205
+q.JJ(x0:"First") -> t.x0 # 0.025641025641
+q.JJ(x0:"nonstop") -> t.x0 # 0.166666666667
+q.JJ(x0:"round") -> t.x0 # 0.192307692308
+q.JJ(x0:"frequent") -> t.x0 # 0.0128205128205
+q.JJ(x0:"sixteenth") -> t.x0 # 0.0128205128205
+q.JJ(x0:"Direct") -> t.x0 # 0.0128205128205
+q.JJ(x0:"second") -> t.x0 # 0.0128205128205
+q.JJ(x0:"Nonstop") -> t.x0 # 0.0384615384615
+q.JJ(x0:"Round") -> t.x0 # 0.025641025641
+q.JJ(x0:"next") -> t.x0 # 0.0769230769231
+q.JJ(x0:"extra") -> t.x0 # 0.0128205128205
+q.JJ(x0:"interested") -> t.x0 # 0.0128205128205
+q.JJ(x0:"many") -> t.x0 # 0.0384615384615
+q.JJ(x0:"last") -> t.x0 # 0.0512820512821
+q.WP(x0:"What") -> t.x0 # 0.958333333333
+q.WP(x0:"what") -> t.x0 # 0.0416666666667
+q.VBZ(x0:"departs") -> t.x0 # 0.0169491525424
+q.VBZ(x0:"serves") -> t.x0 # 0.0338983050847
+q.VBZ(x0:"arrives") -> t.x0 # 0.0338983050847
+q.VBZ(x0:"leaves") -> t.x0 # 0.0677966101695
+q.VBZ(x0:"Is") -> t.x0 # 0.118644067797
+q.VBZ(x0:"lives") -> t.x0 # 0.0338983050847
+q.VBZ(x0:"has") -> t.x0 # 0.0338983050847
+q.VBZ(x0:"goes") -> t.x0 # 0.0169491525424
+q.VBZ(x0:"is") -> t.x0 # 0.525423728814
+q.VBZ(x0:"Does") -> t.x0 # 0.118644067797
+q.DT(x0:"No") -> t.x0 # 0.00469483568075
+q.DT(x0:"those") -> t.x0 # 0.0234741784038
+q.DT(x0:"these") -> t.x0 # 0.0892018779343
+q.DT(x0:"this") -> t.x0 # 0.0281690140845
+q.DT(x0:"that") -> t.x0 # 0.018779342723
+q.DT(x0:"All") -> t.x0 # 0.018779342723
+q.DT(x0:"each") -> t.x0 # 0.00469483568075
+q.DT(x0:"all") -> t.x0 # 0.0469483568075
+q.DT(x0:"a") -> t.x0 # 0.145539906103
+q.DT(x0:"the") -> t.x0 # 0.582159624413
+q.DT(x0:"Any") -> t.x0 # 0.0093896713615
+q.DT(x0:"The") -> t.x0 # 0.018779342723
+q.DT(x0:"any") -> t.x0 # 0.0093896713615
+q.PP(x0:IN x1:CC x2:IN x3:NP) -> q.x0 q.x1 q.x2 q.x3 # 0.00145137880987
+q.PP(x0:PP x1:CC x2:PP) -> q.x0 q.x1 q.x2 # 0.00145137880987
+q.PP(x0:TO x1:INTJ) -> q.x0 q.x1 # 0.00145137880987
+q.PP(x0:NP x1:IN x2:S) -> q.x0 q.x1 q.x2 # 0.00145137880987
+q.PP(x0:IN x1:NP) -> q.x0 q.x1 # 0.676342525399
+q.PP(x0:IN) -> q.x0 # 0.00145137880987
+q.PP(x0:IN x1:ADJP) -> q.x0 q.x1 # 0.00145137880987
+q.PP(x0:TO x1:NP) -> q.x0 q.x1 # 0.314949201742
+q.PUNC(x0:".") -> t.x0 # 0.737739872068
+q.PUNC(x0:"?") -> t.x0 # 0.262260127932
+q.NN(x0:"day") -> t.x0 # 0.0089552238806
+q.NN(x0:"Morning") -> t.x0 # 0.00298507462687
+q.NN(x0:"one") -> t.x0 # 0.00597014925373
+q.NN(x0:"way") -> t.x0 # 0.0238805970149
+q.NN(x0:"restriction") -> t.x0 # 0.00298507462687
+q.NN(x0:"dinner") -> t.x0 # 0.0597014925373
+q.NN(x0:"Flight") -> t.x0 # 0.0208955223881
+q.NN(x0:"reservation") -> t.x0 # 0.00597014925373
+q.NN(x0:"today") -> t.x0 # 0.00597014925373
+q.NN(x0:"cost") -> t.x0 # 0.00597014925373
+q.NN(x0:"aircraft") -> t.x0 # 0.0119402985075
+q.NN(x0:"airfare") -> t.x0 # 0.0149253731343
+q.NN(x0:"abbreviation") -> t.x0 # 0.00298507462687
+q.NN(x0:"stopover") -> t.x0 # 0.00298507462687
+q.NN(x0:"night") -> t.x0 # 0.00597014925373
+q.NN(x0:"evening") -> t.x0 # 0.0328358208955
+q.NN(x0:"meal") -> t.x0 # 0.00298507462687
+q.NN(x0:"stop") -> t.x0 # 0.0208955223881
+q.NN(x0:"Business") -> t.x0 # 0.00298507462687
+q.NN(x0:"type") -> t.x0 # 0.00597014925373
+q.NN(x0:"class") -> t.x0 # 0.0417910447761
+q.NN(x0:"noon") -> t.x0 # 0.0238805970149
+q.NN(x0:"tomorrow") -> t.x0 # 0.0268656716418
+q.NN(x0:"time") -> t.x0 # 0.00597014925373
+q.NN(x0:"airplane") -> t.x0 # 0.00298507462687
+q.NN(x0:"coach") -> t.x0 # 0.00597014925373
+q.NN(x0:"capacity") -> t.x0 # 0.00298507462687
+q.NN(x0:"ground") -> t.x0 # 0.0149253731343
+q.NN(x0:"leg") -> t.x0 # 0.00597014925373
+q.NN(x0:"ticket") -> t.x0 # 0.00298507462687
+q.NN(x0:"number") -> t.x0 # 0.0149253731343
+q.NN(x0:"nonstop") -> t.x0 # 0.00597014925373
+q.NN(x0:"airline") -> t.x0 # 0.00597014925373
+q.NN(x0:"price") -> t.x0 # 0.0358208955224
+q.NN(x0:"Ground") -> t.x0 # 0.0089552238806
+q.NN(x0:"Tomorrow") -> t.x0 # 0.00298507462687
+q.NN(x0:"discount") -> t.x0 # 0.00298507462687
+q.NN(x0:"snack") -> t.x0 # 0.00298507462687
+q.NN(x0:"return") -> t.x0 # 0.00597014925373
+q.NN(x0:"stay") -> t.x0 # 0.00298507462687
+q.NN(x0:"kind") -> t.x0 # 0.00298507462687
+q.NN(x0:"Coach") -> t.x0 # 0.0089552238806
+q.NN(x0:"code") -> t.x0 # 0.00597014925373
+q.NN(x0:"layover") -> t.x0 # 0.00298507462687
+q.NN(x0:"Cost") -> t.x0 # 0.00298507462687
+q.NN(x0:"morning") -> t.x0 # 0.0507462686567
+q.NN(x0:"fare") -> t.x0 # 0.0567164179104
+q.NN(x0:"friend") -> t.x0 # 0.00298507462687
+q.NN(x0:"flyer") -> t.x0 # 0.00298507462687
+q.NN(x0:"transportation") -> t.x0 # 0.0208955223881
+q.NN(x0:"Airline") -> t.x0 # 0.00597014925373
+q.NN(x0:"business") -> t.x0 # 0.00597014925373
+q.NN(x0:"flight") -> t.x0 # 0.232835820896
+q.NN(x0:"afternoon") -> t.x0 # 0.0238805970149
+q.NN(x0:"Price") -> t.x0 # 0.0208955223881
+q.NN(x0:"seating") -> t.x0 # 0.00298507462687
+q.NN(x0:"trip") -> t.x0 # 0.0507462686567
+q.NN(x0:"Return") -> t.x0 # 0.00597014925373
+q.NN(x0:"lunch") -> t.x0 # 0.0149253731343
+q.NN(x0:"Weekday") -> t.x0 # 0.00298507462687
+q.NN(x0:"Departure") -> t.x0 # 0.00298507462687
+q.PRT(x0:RP) -> q.x0 # 1.0
+q.POS(x0:"'s") -> t.x0 # 1.0
+q.NX(x0:NX x1:CC x2:NX) -> q.x0 q.x1 q.x2 # 0.333333333333
+q.NX(x0:NN x1:NN) -> q.x0 q.x1 # 0.333333333333
+q.NX(x0:NN) -> q.x0 # 0.333333333333
+q.TO(x0:"to") -> t.x0 # 1.0
+q.PRP(x0:"they") -> t.x0 # 0.00735294117647
+q.PRP(x0:"me") -> t.x0 # 0.602941176471
+q.PRP(x0:"I") -> t.x0 # 0.323529411765
+q.PRP(x0:"it") -> t.x0 # 0.0147058823529
+q.PRP(x0:"you") -> t.x0 # 0.0441176470588
+q.PRP(x0:"them") -> t.x0 # 0.00735294117647
+q.RB(x0:"first") -> t.x0 # 0.0144927536232
+q.RB(x0:"no") -> t.x0 # 0.0144927536232
+q.RB(x0:"o'clock") -> t.x0 # 0.0724637681159
+q.RB(x0:"here") -> t.x0 # 0.0289855072464
+q.RB(x0:"apart") -> t.x0 # 0.0579710144928
+q.RB(x0:"not") -> t.x0 # 0.0144927536232
+q.RB(x0:"daily") -> t.x0 # 0.0579710144928
+q.RB(x0:"p.m") -> t.x0 # 0.31884057971
+q.RB(x0:"home") -> t.x0 # 0.0144927536232
+q.RB(x0:"back") -> t.x0 # 0.0144927536232
+q.RB(x0:"a.m") -> t.x0 # 0.115942028986
+q.RB(x0:"around") -> t.x0 # 0.0434782608696
+q.RB(x0:"only") -> t.x0 # 0.0144927536232
+q.RB(x0:"as") -> t.x0 # 0.0144927536232
+q.RB(x0:"Anytime") -> t.x0 # 0.0144927536232
+q.RB(x0:"Only") -> t.x0 # 0.0289855072464
+q.RB(x0:"also") -> t.x0 # 0.0144927536232
+q.RB(x0:"early") -> t.x0 # 0.0144927536232
+q.RB(x0:"Now") -> t.x0 # 0.0289855072464
+q.RB(x0:"much") -> t.x0 # 0.0724637681159
+q.RB(x0:"last") -> t.x0 # 0.0144927536232
+q.RB(x0:"actually") -> t.x0 # 0.0144927536232
+q.NP(x0:PDT x1:DT x2:NNS) -> q.x0 q.x1 q.x2 # 0.00192061459667
+q.NP(x0:CD x1:NNS) -> q.x0 q.x1 # 0.00192061459667
+q.NP(x0:DT x1:ADJP x2:NN) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:NP x1:PP x2:VP x3:VP) -> q.x0 q.x1 q.x2 q.x3 # 0.000640204865557
+q.NP(x0:WDT x1:NNS) -> q.x0 q.x1 # 0.000640204865557
+q.NP(x0:JJ x1:NN x2:NNS) -> q.x0 q.x1 q.x2 # 0.00384122919334
+q.NP(x0:DT x1:NN x2:NN x3:NN) -> q.x0 q.x1 q.x2 q.x3 # 0.00128040973111
+q.NP(x0:DT x1:NNP x2:NNP x3:NNP x4:NNS) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.000640204865557
+q.NP(x0:NNP x1:NNS) -> q.x0 q.x1 # 0.000640204865557
+q.NP(x0:NNP x1:NN) -> q.x0 q.x1 # 0.0089628681178
+q.NP(x0:NNP x1:NNP) -> q.x0 q.x1 # 0.0851472471191
+q.NP(x0:NN x1:NN x2:NNS) -> q.x0 q.x1 q.x2 # 0.00320102432778
+q.NP(x0:DT x1:NN) -> q.x0 q.x1 # 0.044814340589
+q.NP(x0:NNP x1:CD x2:CD) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:NP x1:CC x2:ADVP x3:NP) -> q.x0 q.x1 q.x2 q.x3 # 0.000640204865557
+q.NP(x0:NN x1:NN x2:SYM) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:PRP) -> q.x0 # 0.0870678617157
+q.NP(x0:CD x1:NNS x2:PP) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:NP x1:PP) -> q.x0 q.x1 # 0.0345710627401
+q.NP(x0:NNS) -> q.x0 # 0.0441741357234
+q.NP(x0:NNP) -> q.x0 # 0.289372599232
+q.NP(x0:DT x1:NNP x2:NNP x3:NNS) -> q.x0 q.x1 q.x2 q.x3 # 0.00128040973111
+q.NP(x0:NP x1:NN x2:CD x3:CD x4:CD) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.000640204865557
+q.NP(x0:NP x1:PP x2:PP x3:ADVP) -> q.x0 q.x1 q.x2 q.x3 # 0.000640204865557
+q.NP(x0:JJS x1:JJ x2:NN x3:NN) -> q.x0 q.x1 q.x2 q.x3 # 0.00256081946223
+q.NP(x0:DT x1:NN x2:SYM x3:CD) -> q.x0 q.x1 q.x2 q.x3 # 0.000640204865557
+q.NP(x0:QP x1:RB) -> q.x0 q.x1 # 0.00192061459667
+q.NP(x0:NP x1:SBAR x2:PP) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:NNP x1:NNP x2:NNP) -> q.x0 q.x1 q.x2 # 0.0166453265045
+q.NP(x0:DT x1:JJS x2:NN x3:NN) -> q.x0 q.x1 q.x2 q.x3 # 0.00128040973111
+q.NP(x0:DT x1:JJS x2:NN) -> q.x0 q.x1 q.x2 # 0.0044814340589
+q.NP(x0:NP x1:SBAR) -> q.x0 q.x1 # 0.0089628681178
+q.NP(x0:CD x1:RB x2:RB) -> q.x0 q.x1 q.x2 # 0.00256081946223
+q.NP(x0:NNP x1:NNP x2:NN x3:CD x4:CD) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.00128040973111
+q.NP(x0:DT x1:JJS x2:JJ x3:NN x4:NNS) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.000640204865557
+q.NP(x0:DT x1:CD x2:CD x3:NN) -> q.x0 q.x1 q.x2 q.x3 # 0.000640204865557
+q.NP(x0:CD x1:NN x2:NNS) -> q.x0 q.x1 q.x2 # 0.00128040973111
+q.NP(x0:RB x1:DT x2:NNP x3:NNP x4:NNS) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.000640204865557
+q.NP(x0:NP x1:VP) -> q.x0 q.x1 # 0.0044814340589
+q.NP(x0:JJS x1:NN) -> q.x0 q.x1 # 0.00768245838668
+q.NP(x0:NP x1:PP x2:PP x3:PP x4:PP) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.00128040973111
+q.NP(x0:NP x1:PP x2:PP x3:SBAR) -> q.x0 q.x1 q.x2 q.x3 # 0.00320102432778
+q.NP(x0:NP x1:PP x2:PP x3:ADVP x4:NP) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.000640204865557
+q.NP(x0:JJS x1:NNS) -> q.x0 q.x1 # 0.000640204865557
+q.NP(x0:DT x1:JJ x2:NNS) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:NNP x1:CD x2:CD x3:CD) -> q.x0 q.x1 q.x2 q.x3 # 0.000640204865557
+q.NP(x0:JJS x1:NN x2:NN) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:NN x1:NNP x2:NNP x3:CD x4:CD x5:CD) -> q.x0 q.x1 q.x2 q.x3 q.x4 q.x5 # 0.000640204865557
+q.NP(x0:QP x1:NNS) -> q.x0 q.x1 # 0.0044814340589
+q.NP(x0:QP x1:NNS x2:QP) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:EX) -> q.x0 # 0.0128040973111
+q.NP(x0:NN x1:NN x2:NNP x3:NNP x4:CD x5:CD x6:CD x7:CD) -> q.x0 q.x1 q.x2 q.x3 q.x4 q.x5 q.x6 q.x7 # 0.000640204865557
+q.NP(x0:NP x1:ADJP) -> q.x0 q.x1 # 0.00128040973111
+q.NP(x0:DT x1:NN x2:NN x3:SYM) -> q.x0 q.x1 q.x2 q.x3 # 0.000640204865557
+q.NP(x0:CD x1:NN) -> q.x0 q.x1 # 0.00640204865557
+q.NP(x0:DT x1:JJS x2:NNS) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:DT x1:JJ x2:NN) -> q.x0 q.x1 q.x2 # 0.00576184379001
+q.NP(x0:NP x1:NP) -> q.x0 q.x1 # 0.0102432778489
+q.NP(x0:NP x1:NP x2:PP x3:PP x4:PP) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.000640204865557
+q.NP(x0:DT x1:CD x2:CD x3:CD x4:NN) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.000640204865557
+q.NP(x0:NP x1:PP x2:PP) -> q.x0 q.x1 q.x2 # 0.0550576184379
+q.NP(x0:CD x1:CD) -> q.x0 q.x1 # 0.00128040973111
+q.NP(x0:NP x1:VP x2:SBAR) -> q.x0 q.x1 q.x2 # 0.00128040973111
+q.NP(x0:NN x1:NNP x2:NNP x3:CD x4:CD x5:CD x6:CD) -> q.x0 q.x1 q.x2 q.x3 q.x4 q.x5 q.x6 # 0.00128040973111
+q.NP(x0:NP x1:NP x2:PP x3:X x4:PP) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.000640204865557
+q.NP(x0:NP x1:PP x2:PP x3:PP x4:NP) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.000640204865557
+q.NP(x0:CD x1:RB) -> q.x0 q.x1 # 0.0134443021767
+q.NP(x0:DT x1:JJ) -> q.x0 q.x1 # 0.00320102432778
+q.NP(x0:NP x1:VP x2:ADVP) -> q.x0 q.x1 q.x2 # 0.00192061459667
+q.NP(x0:DT x1:NN x2:NN) -> q.x0 q.x1 q.x2 # 0.00512163892446
+q.NP(x0:DT x1:NN x2:NNS) -> q.x0 q.x1 q.x2 # 0.00384122919334
+q.NP(x0:NN) -> q.x0 # 0.0339308578745
+q.NP(x0:DT x1:JJ x2:NN x3:NN) -> q.x0 q.x1 q.x2 q.x3 # 0.00256081946223
+q.NP(x0:NNP x1:JJ) -> q.x0 q.x1 # 0.00128040973111
+q.NP(x0:NN x1:NNP x2:NNP) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:NP x1:CC x2:PP x3:PP) -> q.x0 q.x1 q.x2 q.x3 # 0.000640204865557
+q.NP(x0:DT x1:NN x2:SYM x3:SYM x4:SYM x5:CD x6:CD) -> q.x0 q.x1 q.x2 q.x3 q.x4 q.x5 q.x6 # 0.000640204865557
+q.NP(x0:NN x1:NN) -> q.x0 q.x1 # 0.00768245838668
+q.NP(x0:NP) -> q.x0 # 0.0128040973111
+q.NP(x0:JJ x1:JJ x2:NN) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:NP x1:PP x2:PP x3:NP x4:ADVP) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.000640204865557
+q.NP(x0:NNP x1:POS) -> q.x0 q.x1 # 0.00128040973111
+q.NP(x0:DT x1:NNP x2:NNP x3:CD x4:CD x5:NN) -> q.x0 q.x1 q.x2 q.x3 q.x4 q.x5 # 0.000640204865557
+q.NP(x0:CD) -> q.x0 # 0.000640204865557
+q.NP(x0:NP x1:PP x2:PP x3:PP) -> q.x0 q.x1 q.x2 q.x3 # 0.0102432778489
+q.NP(x0:NP x1:PP x2:PP x3:PP x4:VP) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.000640204865557
+q.NP(x0:CD x1:CD x2:CD x3:RB) -> q.x0 q.x1 q.x2 q.x3 # 0.000640204865557
+q.NP(x0:NP x1:NNS) -> q.x0 q.x1 # 0.000640204865557
+q.NP(x0:QP x1:NN) -> q.x0 q.x1 # 0.00128040973111
+q.NP(x0:DT x1:NX) -> q.x0 q.x1 # 0.000640204865557
+q.NP(x0:JJ x1:NNP x2:NNS) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:NP x1:PP x2:PP x3:NP) -> q.x0 q.x1 q.x2 q.x3 # 0.00512163892446
+q.NP(x0:CD x1:CD x2:NNS) -> q.x0 q.x1 q.x2 # 0.00192061459667
+q.NP(x0:NP x1:NP x2:PP x3:PP) -> q.x0 q.x1 q.x2 q.x3 # 0.00128040973111
+q.NP(x0:DT) -> q.x0 # 0.00960307298335
+q.NP(x0:NP x1:PP x2:PP x3:VP) -> q.x0 q.x1 q.x2 q.x3 # 0.00576184379001
+q.NP(x0:DT x1:CD x2:NN x3:NN) -> q.x0 q.x1 q.x2 q.x3 # 0.000640204865557
+q.NP(x0:NN x1:NNP x2:NNP x3:CD x4:CD x5:CD x6:CD x7:CD) -> q.x0 q.x1 q.x2 q.x3 q.x4 q.x5 q.x6 q.x7 # 0.000640204865557
+q.NP(x0:CC x1:NNP x2:CC x3:NNP) -> q.x0 q.x1 q.x2 q.x3 # 0.000640204865557
+q.NP(x0:NP x1:PP x2:ADJP) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:DT x1:NNP x2:NNP x3:NN) -> q.x0 q.x1 q.x2 q.x3 # 0.000640204865557
+q.NP(x0:JJS x1:NN x2:NNS) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:NN x1:NNS) -> q.x0 q.x1 # 0.00512163892446
+q.NP(x0:CD x1:CC x2:CD x3:RB) -> q.x0 q.x1 q.x2 q.x3 # 0.00128040973111
+q.NP(x0:DT x1:NNP x2:NN) -> q.x0 q.x1 q.x2 # 0.00128040973111
+q.NP(x0:JJ x1:NN x2:NN) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:DT x1:NNS) -> q.x0 q.x1 # 0.0384122919334
+q.NP(x0:NN x1:NNP x2:NNP x3:CD x4:CD) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.000640204865557
+q.NP(x0:JJ x1:NNS) -> q.x0 q.x1 # 0.00384122919334
+q.NP(x0:JJ x1:NNP) -> q.x0 q.x1 # 0.00192061459667
+q.NP(x0:NP x1:PP x2:NP) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:NP x1:CC x2:NP) -> q.x0 q.x1 q.x2 # 0.0128040973111
+q.NP(x0:NN x1:NN x2:NN) -> q.x0 q.x1 q.x2 # 0.000640204865557
+q.NP(x0:JJ x1:NN) -> q.x0 q.x1 # 0.00704225352113
+q.NP(x0:NNPS) -> q.x0 # 0.000640204865557
+q.NP(x0:NN x1:CD x2:CD x3:CD) -> q.x0 q.x1 q.x2 q.x3 # 0.00128040973111
+q.NP(x0:DT x1:JJ x2:X x3:NNS) -> q.x0 q.x1 q.x2 q.x3 # 0.000640204865557
+q.NP(x0:JJ x1:NN x2:JJ x3:NN x4:NN) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.000640204865557
+q.NP(x0:NNP x1:CC x2:NNP) -> q.x0 q.x1 q.x2 # 0.00128040973111
+q.NP(x0:CD x1:CD x2:CD) -> q.x0 q.x1 q.x2 # 0.00192061459667
+q.NP(x0:DT x1:JJ x2:NN x3:NNS) -> q.x0 q.x1 q.x2 q.x3 # 0.00128040973111
+q.NNS(x0:"weekdays") -> t.x0 # 0.0107913669065
+q.NNS(x0:"hours") -> t.x0 # 0.0143884892086
+q.NNS(x0:"tickets") -> t.x0 # 0.00359712230216
+q.NNS(x0:"stops") -> t.x0 # 0.0179856115108
+q.NNS(x0:"Wednesdays") -> t.x0 # 0.00359712230216
+q.NNS(x0:"Fares") -> t.x0 # 0.00719424460432
+q.NNS(x0:"details") -> t.x0 # 0.00359712230216
+q.NNS(x0:"costs") -> t.x0 # 0.00359712230216
+q.NNS(x0:"numbers") -> t.x0 # 0.0107913669065
+q.NNS(x0:"meals") -> t.x0 # 0.0179856115108
+q.NNS(x0:"stopovers") -> t.x0 # 0.00719424460432
+q.NNS(x0:"codes") -> t.x0 # 0.00719424460432
+q.NNS(x0:"dollars") -> t.x0 # 0.0143884892086
+q.NNS(x0:"restrictions") -> t.x0 # 0.00359712230216
+q.NNS(x0:"flights") -> t.x0 # 0.618705035971
+q.NNS(x0:"airlines") -> t.x0 # 0.0107913669065
+q.NNS(x0:"Airports") -> t.x0 # 0.00719424460432
+q.NNS(x0:"minutes") -> t.x0 # 0.0179856115108
+q.NNS(x0:"mornings") -> t.x0 # 0.00359712230216
+q.NNS(x0:"Flights") -> t.x0 # 0.147482014388
+q.NNS(x0:"ones") -> t.x0 # 0.00719424460432
+q.NNS(x0:"fares") -> t.x0 # 0.0575539568345
+q.NNS(x0:"friends") -> t.x0 # 0.00359712230216
+q.WHADVP(x0:WRB) -> q.x0 # 1.0
+q.NNP(x0:"New") -> t.x0 # 0.0290697674419
+q.NNP(x0:"C") -> t.x0 # 0.00697674418605
+q.NNP(x0:"Westchester") -> t.x0 # 0.00581395348837
+q.NNP(x0:"Dulles") -> t.x0 # 0.00232558139535
+q.NNP(x0:"Alaska") -> t.x0 # 0.00116279069767
+q.NNP(x0:"Minneapolis") -> t.x0 # 0.0116279069767
+q.NNP(x0:"Beach") -> t.x0 # 0.00348837209302
+q.NNP(x0:"Ohio") -> t.x0 # 0.00232558139535
+q.NNP(x0:"United") -> t.x0 # 0.00697674418605
+q.NNP(x0:"Charlotte") -> t.x0 # 0.0104651162791
+q.NNP(x0:"Thursday") -> t.x0 # 0.0116279069767
+q.NNP(x0:"Chicago") -> t.x0 # 0.0104651162791
+q.NNP(x0:"Milwaukee") -> t.x0 # 0.0232558139535
+q.NNP(x0:"Salt") -> t.x0 # 0.00697674418605
+q.NNP(x0:"June") -> t.x0 # 0.00116279069767
+q.NNP(x0:"Southwest") -> t.x0 # 0.0046511627907
+q.NNP(x0:"Tuesday") -> t.x0 # 0.00697674418605
+q.NNP(x0:"Friday") -> t.x0 # 0.0139534883721
+q.NNP(x0:"Baltimore") -> t.x0 # 0.0220930232558
+q.NNP(x0:"K") -> t.x0 # 0.0046511627907
+q.NNP(x0:"July") -> t.x0 # 0.00581395348837
+q.NNP(x0:"Seattle") -> t.x0 # 0.00697674418605
+q.NNP(x0:"Tennessee") -> t.x0 # 0.00116279069767
+q.NNP(x0:"North") -> t.x0 # 0.00116279069767
+q.NNP(x0:"S") -> t.x0 # 0.00348837209302
+q.NNP(x0:"P") -> t.x0 # 0.00116279069767
+q.NNP(x0:"York") -> t.x0 # 0.0244186046512
+q.NNP(x0:"A") -> t.x0 # 0.0116279069767
+q.NNP(x0:"Washington") -> t.x0 # 0.0093023255814
+q.NNP(x0:"Cincinnati") -> t.x0 # 0.0116279069767
+q.NNP(x0:"O") -> t.x0 # 0.00116279069767
+q.NNP(x0:"Angeles") -> t.x0 # 0.0127906976744
+q.NNP(x0:"Nashville") -> t.x0 # 0.0197674418605
+q.NNP(x0:"Lake") -> t.x0 # 0.00697674418605
+q.NNP(x0:"Phoenix") -> t.x0 # 0.0220930232558
+q.NNP(x0:"Continental") -> t.x0 # 0.00116279069767
+q.NNP(x0:"Philadelphia") -> t.x0 # 0.0093023255814
+q.NNP(x0:"F") -> t.x0 # 0.00697674418605
+q.NNP(x0:"Newark") -> t.x0 # 0.0337209302326
+q.NNP(x0:"Kansas") -> t.x0 # 0.0162790697674
+q.NNP(x0:"Saturday") -> t.x0 # 0.0093023255814
+q.NNP(x0:"Orlando") -> t.x0 # 0.0174418604651
+q.NNP(x0:"N") -> t.x0 # 0.00232558139535
+q.NNP(x0:"J") -> t.x0 # 0.0046511627907
+q.NNP(x0:"Tacoma") -> t.x0 # 0.0116279069767
+q.NNP(x0:"Jersey") -> t.x0 # 0.0046511627907
+q.NNP(x0:"Memphis") -> t.x0 # 0.0162790697674
+q.NNP(x0:"Dallas") -> t.x0 # 0.0162790697674
+q.NNP(x0:"Montreal") -> t.x0 # 0.0093023255814
+q.NNP(x0:"Long") -> t.x0 # 0.00348837209302
+q.NNP(x0:"Carolina") -> t.x0 # 0.00116279069767
+q.NNP(x0:"Denver") -> t.x0 # 0.0174418604651
+q.NNP(x0:"Air") -> t.x0 # 0.00348837209302
+q.NNP(x0:"Petersburg") -> t.x0 # 0.00348837209302
+q.NNP(x0:"Pittsburgh") -> t.x0 # 0.0139534883721
+q.NNP(x0:"Monday") -> t.x0 # 0.0116279069767
+q.NNP(x0:"Los") -> t.x0 # 0.0127906976744
+q.NNP(x0:"Burbank") -> t.x0 # 0.00697674418605
+q.NNP(x0:"Delta") -> t.x0 # 0.00232558139535
+q.NNP(x0:"La") -> t.x0 # 0.00348837209302
+q.NNP(x0:"Arrival") -> t.x0 # 0.00116279069767
+q.NNP(x0:"City") -> t.x0 # 0.0337209302326
+q.NNP(x0:"International") -> t.x0 # 0.00232558139535
+q.NNP(x0:"County") -> t.x0 # 0.0046511627907
+q.NNP(x0:"Oakland") -> t.x0 # 0.00813953488372
+q.NNP(x0:"Ontario") -> t.x0 # 0.00813953488372
+q.NNP(x0:"Sunday") -> t.x0 # 0.0116279069767
+q.NNP(x0:"Detroit") -> t.x0 # 0.00697674418605
+q.NNP(x0:"Paul") -> t.x0 # 0.00232558139535
+q.NNP(x0:"Airlines") -> t.x0 # 0.0197674418605
+q.NNP(x0:"W") -> t.x0 # 0.00697674418605
+q.NNP(x0:"Miami") -> t.x0 # 0.0174418604651
+q.NNP(x0:"Florida") -> t.x0 # 0.00116279069767
+q.NNP(x0:"Atlanta") -> t.x0 # 0.00697674418605
+q.NNP(x0:"Cleveland") -> t.x0 # 0.0337209302326
+q.NNP(x0:"California") -> t.x0 # 0.00116279069767
+q.NNP(x0:"Columbus") -> t.x0 # 0.0116279069767
+q.NNP(x0:"D") -> t.x0 # 0.00581395348837
+q.NNP(x0:"Tampa") -> t.x0 # 0.0174418604651
+q.NNP(x0:"American") -> t.x0 # 0.0139534883721
+q.NNP(x0:"T") -> t.x0 # 0.0046511627907
+q.NNP(x0:"Toronto") -> t.x0 # 0.0116279069767
+q.NNP(x0:"Boston") -> t.x0 # 0.00697674418605
+q.NNP(x0:"Michigan") -> t.x0 # 0.00116279069767
+q.NNP(x0:"Diego") -> t.x0 # 0.0093023255814
+q.NNP(x0:"San") -> t.x0 # 0.0348837209302
+q.NNP(x0:"Vegas") -> t.x0 # 0.0279069767442
+q.NNP(x0:"Francisco") -> t.x0 # 0.0174418604651
+q.NNP(x0:"Guardia") -> t.x0 # 0.00348837209302
+q.NNP(x0:"Louis") -> t.x0 # 0.00348837209302
+q.NNP(x0:"Las") -> t.x0 # 0.0279069767442
+q.NNP(x0:"Wednesday") -> t.x0 # 0.0174418604651
+q.NNP(x0:"Saint") -> t.x0 # 0.0093023255814
+q.NNP(x0:"U") -> t.x0 # 0.0046511627907
+q.NNP(x0:"Houston") -> t.x0 # 0.0186046511628
+q.NNP(x0:"Jose") -> t.x0 # 0.00813953488372
+q.NNP(x0:"Indianapolis") -> t.x0 # 0.0127906976744
+q.FRAG(x0:NP x1:NP) -> q.x0 q.x1 # 0.010752688172
+q.FRAG(x0:NP x1:PP x2:PP) -> q.x0 q.x1 q.x2 # 0.010752688172
+q.FRAG(x0:PP x1:PP) -> q.x0 q.x1 # 0.0215053763441
+q.FRAG(x0:NP x1:PP x2:ADVP) -> q.x0 q.x1 q.x2 # 0.00537634408602
+q.FRAG(x0:NP x1:PP x2:PP x3:NP) -> q.x0 q.x1 q.x2 q.x3 # 0.00537634408602
+q.FRAG(x0:ADJP) -> q.x0 # 0.0161290322581
+q.FRAG(x0:NP x1:NP x2:PP x3:PP) -> q.x0 q.x1 q.x2 q.x3 # 0.00537634408602
+q.FRAG(x0:X x1:PP) -> q.x0 q.x1 # 0.010752688172
+q.FRAG(x0:PP) -> q.x0 # 0.0268817204301
+q.FRAG(x0:NP x1:INTJ) -> q.x0 q.x1 # 0.00537634408602
+q.FRAG(x0:WHNP) -> q.x0 # 0.177419354839
+q.FRAG(x0:VP) -> q.x0 # 0.0430107526882
+q.FRAG(x0:NP x1:NP x2:NP x3:NP) -> q.x0 q.x1 q.x2 q.x3 # 0.00537634408602
+q.FRAG(x0:WHNP x1:PP) -> q.x0 q.x1 # 0.00537634408602
+q.FRAG(x0:X x1:NP) -> q.x0 q.x1 # 0.0161290322581
+q.FRAG(x0:PP x1:VP) -> q.x0 q.x1 # 0.00537634408602
+q.FRAG(x0:NP) -> q.x0 # 0.58064516129
+q.FRAG(x0:WHNP x1:PP x2:PP) -> q.x0 q.x1 q.x2 # 0.010752688172
+q.FRAG(x0:ADVP x1:NP) -> q.x0 q.x1 # 0.00537634408602
+q.FRAG(x0:NP x1:PP) -> q.x0 q.x1 # 0.0268817204301
+q.FRAG(x0:PP x1:PP x2:VP) -> q.x0 q.x1 q.x2 # 0.00537634408602
+q.VB(x0:"visit") -> t.x0 # 0.0116279069767
+q.VB(x0:"leave") -> t.x0 # 0.0290697674419
+q.VB(x0:"make") -> t.x0 # 0.00581395348837
+q.VB(x0:"serve") -> t.x0 # 0.0406976744186
+q.VB(x0:"cost") -> t.x0 # 0.0174418604651
+q.VB(x0:"use") -> t.x0 # 0.00581395348837
+q.VB(x0:"Display") -> t.x0 # 0.00581395348837
+q.VB(x0:"go") -> t.x0 # 0.0116279069767
+q.VB(x0:"know") -> t.x0 # 0.00581395348837
+q.VB(x0:"Thank") -> t.x0 # 0.0116279069767
+q.VB(x0:"stop") -> t.x0 # 0.0116279069767
+q.VB(x0:"Book") -> t.x0 # 0.00581395348837
+q.VB(x0:"Give") -> t.x0 # 0.00581395348837
+q.VB(x0:"find") -> t.x0 # 0.0116279069767
+q.VB(x0:"cancel") -> t.x0 # 0.00581395348837
+q.VB(x0:"Tell") -> t.x0 # 0.00581395348837
+q.VB(x0:"show") -> t.x0 # 0.0174418604651
+q.VB(x0:"travel") -> t.x0 # 0.0174418604651
+q.VB(x0:"arrive") -> t.x0 # 0.0232558139535
+q.VB(x0:"have") -> t.x0 # 0.0290697674419
+q.VB(x0:"list") -> t.x0 # 0.0232558139535
+q.VB(x0:"like") -> t.x0 # 0.0988372093023
+q.VB(x0:"fly") -> t.x0 # 0.0290697674419
+q.VB(x0:"return") -> t.x0 # 0.0116279069767
+q.VB(x0:"be") -> t.x0 # 0.0116279069767
+q.VB(x0:"Explain") -> t.x0 # 0.0174418604651
+q.VB(x0:"Show") -> t.x0 # 0.5
+q.VB(x0:"get") -> t.x0 # 0.00581395348837
+q.VB(x0:"List") -> t.x0 # 0.0174418604651
+q.VB(x0:"display") -> t.x0 # 0.00581395348837
+q.WRB(x0:"Where") -> t.x0 # 0.1
+q.WRB(x0:"How") -> t.x0 # 0.9
+q.QP(x0:RB x1:CD) -> q.x0 q.x1 # 0.214285714286
+q.QP(x0:IN x1:JJS x2:CD) -> q.x0 q.x1 q.x2 # 0.142857142857
+q.QP(x0:RB x1:JJR x2:IN x3:CD x4:CD x5:CD) -> q.x0 q.x1 q.x2 q.x3 q.x4 q.x5 # 0.0714285714286
+q.QP(x0:RBR x1:IN x2:CD) -> q.x0 q.x1 q.x2 # 0.285714285714
+q.QP(x0:CD x1:CD x2:CD) -> q.x0 q.x1 q.x2 # 0.142857142857
+q.QP(x0:CC x1:JJR) -> q.x0 q.x1 # 0.0714285714286
+q.QP(x0:CD x1:CD x2:CD x3:CD) -> q.x0 q.x1 q.x2 q.x3 # 0.0714285714286
+q.CC(x0:"and") -> t.x0 # 0.80487804878
+q.CC(x0:"either") -> t.x0 # 0.0243902439024
+q.CC(x0:"or") -> t.x0 # 0.170731707317
+q.PDT(x0:"all") -> t.x0 # 1.0
+q.RBS(x0:"least") -> t.x0 # 0.333333333333
+q.RBS(x0:"latest") -> t.x0 # 0.666666666667
+q.RBR(x0:"less") -> t.x0 # 1.0
+q.CD(x0:"eleven") -> t.x0 # 0.0141843971631
+q.CD(x0:"forty") -> t.x0 # 0.0141843971631
+q.CD(x0:"one") -> t.x0 # 0.191489361702
+q.CD(x0:"fifty") -> t.x0 # 0.0425531914894
+q.CD(x0:"thirty") -> t.x0 # 0.0780141843972
+q.CD(x0:"five") -> t.x0 # 0.127659574468
+q.CD(x0:"three") -> t.x0 # 0.0141843971631
+q.CD(x0:"six") -> t.x0 # 0.0780141843972
+q.CD(x0:"seven") -> t.x0 # 0.0780141843972
+q.CD(x0:"zero") -> t.x0 # 0.00709219858156
+q.CD(x0:"seventeen") -> t.x0 # 0.00709219858156
+q.CD(x0:"fourteen") -> t.x0 # 0.00709219858156
+q.CD(x0:"eighteen") -> t.x0 # 0.00709219858156
+q.CD(x0:"nine") -> t.x0 # 0.0496453900709
+q.CD(x0:"thousand") -> t.x0 # 0.00709219858156
+q.CD(x0:"Zero") -> t.x0 # 0.00709219858156
+q.CD(x0:"twenty") -> t.x0 # 0.0141843971631
+q.CD(x0:"ten") -> t.x0 # 0.0780141843972
+q.CD(x0:"two") -> t.x0 # 0.0141843971631
+q.CD(x0:"hundred") -> t.x0 # 0.0567375886525
+q.CD(x0:"four") -> t.x0 # 0.0212765957447
+q.CD(x0:"eight") -> t.x0 # 0.0283687943262
+q.CD(x0:"nineteen") -> t.x0 # 0.00709219858156
+q.CD(x0:"twelve") -> t.x0 # 0.0354609929078
+q.CD(x0:"oh") -> t.x0 # 0.0141843971631
+q.VP(x0:VB x1:PP x2:X x3:PP) -> q.x0 q.x1 q.x2 q.x3 # 0.00273224043716
+q.VP(x0:VBG) -> q.x0 # 0.00546448087432
+q.VP(x0:VB x1:PP) -> q.x0 q.x1 # 0.0191256830601
+q.VP(x0:VBP x1:NP x2:PP) -> q.x0 q.x1 q.x2 # 0.0109289617486
+q.VP(x0:VBD x1:NP) -> q.x0 q.x1 # 0.00273224043716
+q.VP(x0:VBG x1:PP x2:PP) -> q.x0 q.x1 q.x2 # 0.016393442623
+q.VP(x0:VB x1:PP x2:PP x3:PP) -> q.x0 q.x1 q.x2 q.x3 # 0.00273224043716
+q.VP(x0:VBN) -> q.x0 # 0.00273224043716
+q.VP(x0:VBP x1:RB x2:VP) -> q.x0 q.x1 q.x2 # 0.00273224043716
+q.VP(x0:VB x1:PP x2:PP x3:NP) -> q.x0 q.x1 q.x2 q.x3 # 0.00273224043716
+q.VP(x0:VB x1:NP x2:PP) -> q.x0 q.x1 q.x2 # 0.00273224043716
+q.VP(x0:VBG x1:PP x2:PP x3:PP) -> q.x0 q.x1 q.x2 q.x3 # 0.00273224043716
+q.VP(x0:VBZ x1:PP) -> q.x0 q.x1 # 0.0136612021858
+q.VP(x0:VBZ) -> q.x0 # 0.00273224043716
+q.VP(x0:VB x1:NP) -> q.x0 q.x1 # 0.125683060109
+q.VP(x0:VBP x1:ADVP) -> q.x0 q.x1 # 0.00819672131148
+q.VP(x0:VBP x1:NP) -> q.x0 q.x1 # 0.0846994535519
+q.VP(x0:VBP x1:ADJP) -> q.x0 q.x1 # 0.00546448087432
+q.VP(x0:VBP x1:NP x2:PP x3:PP) -> q.x0 q.x1 q.x2 q.x3 # 0.00546448087432
+q.VP(x0:VBZ x1:ADJP) -> q.x0 q.x1 # 0.0136612021858
+q.VP(x0:VB x1:NP x2:PP x3:ADVP) -> q.x0 q.x1 q.x2 q.x3 # 0.00273224043716
+q.VP(x0:VBN x1:PP) -> q.x0 q.x1 # 0.00819672131148
+q.VP(x0:VB x1:PRT x2:NP) -> q.x0 q.x1 q.x2 # 0.00273224043716
+q.VP(x0:VB) -> q.x0 # 0.016393442623
+q.VP(x0:VB x1:ADVP x2:PP x3:ADJP) -> q.x0 q.x1 q.x2 q.x3 # 0.00273224043716
+q.VP(x0:VB x1:PP x2:PP) -> q.x0 q.x1 q.x2 # 0.0245901639344
+q.VP(x0:VBP x1:PP x2:PP x3:NP) -> q.x0 q.x1 q.x2 q.x3 # 0.00273224043716
+q.VP(x0:VB x1:PP x2:NP) -> q.x0 q.x1 q.x2 # 0.00273224043716
+q.VP(x0:VB x1:NP x2:NP) -> q.x0 q.x1 q.x2 # 0.210382513661
+q.VP(x0:VB x1:ADVP x2:NP) -> q.x0 q.x1 q.x2 # 0.00273224043716
+q.VP(x0:VBP x1:PP x2:PP) -> q.x0 q.x1 q.x2 # 0.0191256830601
+q.VP(x0:VBZ x1:NP) -> q.x0 q.x1 # 0.0136612021858
+q.VP(x0:VP x1:CC x2:VP) -> q.x0 q.x1 q.x2 # 0.0191256830601
+q.VP(x0:TO x1:VP) -> q.x0 q.x1 # 0.0628415300546
+q.VP(x0:VBZ x1:PP x2:PP) -> q.x0 q.x1 q.x2 # 0.00546448087432
+q.VP(x0:VBP x1:VP) -> q.x0 q.x1 # 0.00273224043716
+q.VP(x0:VBG x1:NP) -> q.x0 q.x1 # 0.0218579234973
+q.VP(x0:VBP x1:S) -> q.x0 q.x1 # 0.0218579234973
+q.VP(x0:VBP x1:PP x2:PP x3:PP) -> q.x0 q.x1 q.x2 q.x3 # 0.016393442623
+q.VP(x0:VB x1:NP x2:NP x3:INTJ) -> q.x0 q.x1 q.x2 q.x3 # 0.00546448087432
+q.VP(x0:VB x1:NP x2:ADVP) -> q.x0 q.x1 q.x2 # 0.00273224043716
+q.VP(x0:MD x1:VP) -> q.x0 q.x1 # 0.0573770491803
+q.VP(x0:VBZ x1:ADVP) -> q.x0 q.x1 # 0.00546448087432
+q.VP(x0:VBP x1:PP) -> q.x0 q.x1 # 0.0409836065574
+q.VP(x0:VB x1:S) -> q.x0 q.x1 # 0.0409836065574
+q.VP(x0:VBG x1:NP x2:PP) -> q.x0 q.x1 q.x2 # 0.00819672131148
+q.VP(x0:VBG x1:PP) -> q.x0 q.x1 # 0.0437158469945
+q.VP(x0:VBP x1:FRAG) -> q.x0 q.x1 # 0.00273224043716
+q.S(x0:NP x1:VP) -> q.x0 q.x1 # 0.231527093596
+q.S(x0:ADVP x1:NP x2:VP) -> q.x0 q.x1 q.x2 # 0.00985221674877
+q.S(x0:S x1:CC x2:S) -> q.x0 q.x1 q.x2 # 0.00985221674877
+q.S(x0:INTJ x1:VP) -> q.x0 q.x1 # 0.0197044334975
+q.S(x0:PP x1:NP x2:VP) -> q.x0 q.x1 q.x2 # 0.00985221674877
+q.S(x0:VP) -> q.x0 # 0.699507389163
+q.S(x0:INTJ x1:NP x2:VP) -> q.x0 q.x1 q.x2 # 0.00492610837438
+q.S(x0:ADVP x1:VP) -> q.x0 q.x1 # 0.00985221674877
+q.S(x0:NP x1:ADVP x2:VP) -> q.x0 q.x1 q.x2 # 0.00492610837438
+q.EX(x0:"there") -> t.x0 # 1.0
+q.IN(x0:"After") -> t.x0 # 0.00207039337474
+q.IN(x0:"at") -> t.x0 # 0.0207039337474
+q.IN(x0:"through") -> t.x0 # 0.00207039337474
+q.IN(x0:"With") -> t.x0 # 0.00621118012422
+q.IN(x0:"after") -> t.x0 # 0.0331262939959
+q.IN(x0:"On") -> t.x0 # 0.00828157349896
+q.IN(x0:"for") -> t.x0 # 0.0103519668737
+q.IN(x0:"between") -> t.x0 # 0.0269151138716
+q.IN(x0:"from") -> t.x0 # 0.453416149068
+q.IN(x0:"within") -> t.x0 # 0.00207039337474
+q.IN(x0:"by") -> t.x0 # 0.00621118012422
+q.IN(x0:"about") -> t.x0 # 0.0124223602484
+q.IN(x0:"around") -> t.x0 # 0.0124223602484
+q.IN(x0:"during") -> t.x0 # 0.00207039337474
+q.IN(x0:"of") -> t.x0 # 0.0807453416149
+q.IN(x0:"as") -> t.x0 # 0.00207039337474
+q.IN(x0:"From") -> t.x0 # 0.0103519668737
+q.IN(x0:"than") -> t.x0 # 0.0144927536232
+q.IN(x0:"via") -> t.x0 # 0.00621118012422
+q.IN(x0:"before") -> t.x0 # 0.0269151138716
+q.IN(x0:"into") -> t.x0 # 0.00207039337474
+q.IN(x0:"in") -> t.x0 # 0.101449275362
+q.IN(x0:"Of") -> t.x0 # 0.00207039337474
+q.IN(x0:"with") -> t.x0 # 0.0124223602484
+q.IN(x0:"on") -> t.x0 # 0.142857142857
+q.X(x0:WRB x1:IN) -> q.x0 q.x1 # 0.0909090909091
+q.X(x0:S) -> q.x0 # 0.0909090909091
+q.X(x0:TO) -> q.x0 # 0.181818181818
+q.X(x0:SBARQ) -> q.x0 # 0.0909090909091
+q.X(x0:JJ) -> q.x0 # 0.0909090909091
+q.X(x0:WP x1:IN) -> q.x0 q.x1 # 0.363636363636
+q.X(x0:VBZ x1:NP) -> q.x0 q.x1 # 0.0909090909091
+q.RP(x0:"out") -> t.x0 # 1.0
+q.INTJ(x0:UH) -> q.x0 # 1.0
+q.ADVP(x0:RB x1:PP) -> q.x0 q.x1 # 0.04
+q.ADVP(x0:RBS) -> q.x0 # 0.08
+q.ADVP(x0:ADVP x1:PP) -> q.x0 q.x1 # 0.08
+q.ADVP(x0:RB) -> q.x0 # 0.64
+q.ADVP(x0:NP x1:RB) -> q.x0 q.x1 # 0.16
+q.MD(x0:"Can") -> t.x0 # 0.0769230769231
+q.MD(x0:"'d") -> t.x0 # 0.384615384615
+q.MD(x0:"should") -> t.x0 # 0.153846153846
+q.MD(x0:"could") -> t.x0 # 0.0384615384615
+q.MD(x0:"would") -> t.x0 # 0.346153846154
+q.NNPS(x0:"Wednesdays") -> t.x0 # 1.0
+q.SQ(x0:VBP x1:NP x2:NP x3:PP x4:PP) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.016
+q.SQ(x0:VBP x1:NP x2:NP) -> q.x0 q.x1 q.x2 # 0.008
+q.SQ(x0:VBZ x1:NP x2:VP) -> q.x0 q.x1 q.x2 # 0.064
+q.SQ(x0:MD x1:NP x2:VP) -> q.x0 q.x1 q.x2 # 0.032
+q.SQ(x0:VBP x1:NP) -> q.x0 q.x1 # 0.048
+q.SQ(x0:VBZ x1:NP x2:PP) -> q.x0 q.x1 q.x2 # 0.008
+q.SQ(x0:VP) -> q.x0 # 0.4
+q.SQ(x0:VBP x1:NP x2:PP x3:PP x4:PP) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.016
+q.SQ(x0:VBP x1:NP x2:PP x3:PP) -> q.x0 q.x1 q.x2 q.x3 # 0.104
+q.SQ(x0:VBZ x1:NP) -> q.x0 q.x1 # 0.192
+q.SQ(x0:VBZ x1:NP x2:NP) -> q.x0 q.x1 q.x2 # 0.032
+q.SQ(x0:X x1:VBZ x2:NP x3:ADJP) -> q.x0 q.x1 q.x2 q.x3 # 0.008
+q.SQ(x0:VBP x1:NP x2:VP) -> q.x0 q.x1 q.x2 # 0.064
+q.SQ(x0:INTJ x1:MD x2:NP x3:VP) -> q.x0 q.x1 q.x2 q.x3 # 0.008
+q.JJS(x0:"Cheapest") -> t.x0 # 0.424242424242
+q.JJS(x0:"Earliest") -> t.x0 # 0.030303030303
+q.JJS(x0:"cheapest") -> t.x0 # 0.0909090909091
+q.JJS(x0:"earliest") -> t.x0 # 0.0909090909091
+q.JJS(x0:"latest") -> t.x0 # 0.121212121212
+q.JJS(x0:"Lowest") -> t.x0 # 0.030303030303
+q.JJS(x0:"least") -> t.x0 # 0.0606060606061
+q.JJS(x0:"lowest") -> t.x0 # 0.030303030303
+q.JJS(x0:"Shortest") -> t.x0 # 0.0909090909091
+q.JJS(x0:"longest") -> t.x0 # 0.030303030303
+q.SBARQ(x0:PP x1:WHNP x2:SQ) -> q.x0 q.x1 q.x2 # 0.00970873786408
+q.SBARQ(x0:WHADVP x1:SQ) -> q.x0 q.x1 # 0.00970873786408
+q.SBARQ(x0:WHNP x1:SQ) -> q.x0 q.x1 # 0.980582524272
+q.WHADJP(x0:WRB x1:JJ) -> q.x0 q.x1 # 1.0
+q.WHNP(x0:WRB x1:RB) -> q.x0 q.x1 # 0.0214592274678
+q.WHNP(x0:NP x1:PP x2:PP x3:PP) -> q.x0 q.x1 q.x2 q.x3 # 0.00429184549356
+q.WHNP(x0:WHNP x1:PP x2:PP x3:PP x4:PP x5:PP) -> q.x0 q.x1 q.x2 q.x3 q.x4 q.x5 # 0.00429184549356
+q.WHNP(x0:WDT x1:NN) -> q.x0 q.x1 # 0.0128755364807
+q.WHNP(x0:WHNP x1:PP x2:PP x3:PP) -> q.x0 q.x1 q.x2 q.x3 # 0.0557939914163
+q.WHNP(x0:WHADJP x1:NNS) -> q.x0 q.x1 # 0.0128755364807
+q.WHNP(x0:WHNP x1:PP) -> q.x0 q.x1 # 0.0901287553648
+q.WHNP(x0:WHNP) -> q.x0 # 0.0858369098712
+q.WHNP(x0:WDT x1:NNS) -> q.x0 q.x1 # 0.339055793991
+q.WHNP(x0:WDT) -> q.x0 # 0.210300429185
+q.WHNP(x0:WHNP x1:PP x2:PP x3:PP x4:PP) -> q.x0 q.x1 q.x2 q.x3 q.x4 # 0.0171673819742
+q.WHNP(x0:WP) -> q.x0 # 0.0858369098712
+q.WHNP(x0:WHNP x1:PP x2:PP) -> q.x0 q.x1 q.x2 # 0.0557939914163
+q.WHNP(x0:WHNP x1:ADJP) -> q.x0 q.x1 # 0.00429184549356
+q.UH(x0:"oops") -> t.x0 # 0.0833333333333
+q.UH(x0:"Please") -> t.x0 # 0.25
+q.UH(x0:"Hi") -> t.x0 # 0.0833333333333
+q.UH(x0:"Thanks") -> t.x0 # 0.166666666667
+q.UH(x0:"Okay") -> t.x0 # 0.166666666667
+q.UH(x0:"please") -> t.x0 # 0.166666666667
+q.UH(x0:"oh") -> t.x0 # 0.0833333333333
+t."visit" -> "visitarme" # 1.0
+t."apart" -> "diferencia" # 1.0
+t."goes" -> "va" # 1.0
+t."expensive" -> "costosos" # 1.0
+t."stopover" -> "escala" # 1.0
+t."First" -> "Primera" # 0.5
+t."First" -> "La" "primera" # 0.5
+t."living" -> "vive" # 1.0
+t."returning" -> "regresar" "parar" # 1.0
+t."Okay" -> "De" "acuerdo" # 0.5
+t."Okay" -> "Bien" # 0.5
+t."zero" -> "cero" # 1.0
+t."Chicago" -> "Chicago" # 1.0
+t."capacity" -> "de" "plazas" # 1.0
+t."flights" -> "directos" # 0.00581395348837
+t."flights" -> "vuelos" # 0.610465116279
+t."flights" -> "que" "vuelos" # 0.093023255814
+t."flights" -> "cortas" # 0.00581395348837
+t."flights" -> "que" # 0.0639534883721
+t."flights" -> "escalas" # 0.00581395348837
+t."flights" -> "de" # 0.0116279069767
+t."flights" -> "Vuelos" # 0.0116279069767
+t."flights" -> "vuelos" "que" # 0.0116279069767
+t."flights" -> "económica" # 0.00581395348837
+t."flights" -> *e* # 0.0116279069767
+t."flights" -> "y" # 0.0116279069767
+t."flights" -> "baratos" # 0.151162790698
+t."June" -> "junio" # 1.0
+t."Tomorrow" -> "Mañana" # 1.0
+t."Anytime" -> "En" "cualquier" "momento" "el" # 1.0
+t."ten" -> "las" "diez" # 0.181818181818
+t."ten" -> "diez" # 0.545454545455
+t."ten" -> "diez" "de" # 0.181818181818
+t."ten" -> "de" "diez" # 0.0909090909091
+t."hundred" -> "doscientos" # 0.25
+t."hundred" -> "diecisiete" # 0.125
+t."hundred" -> "mil" # 0.125
+t."hundred" -> "ciento" # 0.5
+t."Seattle" -> "Seattle" # 1.0
+t."four" -> "cuatro" # 1.0
+t."Airline" -> "Airline" # 0.5
+t."Airline" -> "Línea" "aérea" # 0.5
+t."Tennessee" -> "Tennessee" # 1.0
+t."ones" -> "Cuáles" # 0.5
+t."ones" -> "paran" # 0.5
+t."a" -> "una" # 0.137931034483
+t."a" -> "un" # 0.793103448276
+t."a" -> "una" "un" # 0.0689655172414
+t."S" -> "S" # 1.0
+t."either" -> "hojas" # 1.0
+t."through" -> "a" "través" "de" # 1.0
+t."stay" -> "permanecen" # 1.0
+t."hours" -> "horas" # 1.0
+t."York" -> "York" # 0.809523809524
+t."York" -> "ciudad" "York" # 0.190476190476
+t."A" -> "Un" "Un" # 0.111111111111
+t."A" -> "A" # 0.777777777778
+t."A" -> "A" "A" # 0.111111111111
+t."Last" -> "Último" # 0.5
+t."Last" -> "Última" "regresar" # 0.5
+t."Francisco" -> "Francisco" # 1.0
+t."H" -> "H" # 1.0
+t."slash" -> "slash" "y" # 1.0
+t."type" -> "Qué" "tipo" # 0.5
+t."type" -> "tipo" "de" "aeronave" # 0.5
+t."stopovers" -> "puentes" # 1.0
+t."Philadelphia" -> "Filadelfia" # 1.0
+t."around" -> "alrededor" "las" # 0.333333333333
+t."around" -> "eso" "las" # 0.222222222222
+t."around" -> "alrededor" # 0.222222222222
+t."around" -> "las" # 0.111111111111
+t."around" -> "las" "alrededor" # 0.111111111111
+t."'re" -> "que" "'re" # 1.0
+t."Please" -> "Anote" # 0.333333333333
+t."Please" -> "Por" # 0.666666666667
+t."return" -> "de" "regreso" # 0.5
+t."return" -> "volver" # 0.25
+t."return" -> "devolver" # 0.25
+t."layover" -> "más" "larga" # 1.0
+t."Ground" -> "Transporte" # 1.0
+t."Flights" -> "Vuelos" # 0.90243902439
+t."Flights" -> "Los" # 0.0975609756098
+t."oh" -> "oh" # 1.0
+t."Carolina" -> "el" # 1.0
+t."Business" -> "Las" "de" # 1.0
+t."Wednesdays" -> "miércoles" # 0.5
+t."Wednesdays" -> "los" "miércoles" # 0.5
+t."With" -> "Con" # 1.0
+t."details" -> "detalles" # 1.0
+t."serves" -> "sirve" # 1.0
+t."evening" -> "noche" # 0.272727272727
+t."evening" -> "la" "noche" # 0.0909090909091
+t."evening" -> "la" "noche" "por" # 0.0909090909091
+t."evening" -> "de" "la" "noche" # 0.0909090909091
+t."evening" -> "por" "la" "noche" # 0.181818181818
+t."evening" -> *e* # 0.0909090909091
+t."evening" -> "la" "noche" "del" # 0.181818181818
+t."Los" -> "Los" # 1.0
+t."Burbank" -> "Burbank" # 1.0
+t."Delta" -> "Delta" # 1.0
+t."The" -> "El" # 1.0
+t."any" -> "Alguno" "los" # 0.5
+t."any" -> "Alguno" # 0.5
+t."Hi" -> "Hola" # 1.0
+t."want" -> "Quiero" # 0.666666666667
+t."want" -> "quiero" # 0.333333333333
+t."Sunday" -> "domingo" # 1.0
+t."Detroit" -> "Detroit" # 1.0
+t."need" -> "que" # 0.0625
+t."need" -> "disponer" # 0.0625
+t."need" -> "necesito" # 0.125
+t."need" -> "Necesito" # 0.75
+t."Of" -> "De" # 1.0
+t."all" -> "todas" # 0.0769230769231
+t."all" -> "todos" # 0.230769230769
+t."all" -> "todos" "los" # 0.692307692308
+t."Does" -> "¿" "Sirve" # 0.714285714286
+t."Does" -> "Sirve" # 0.142857142857
+t."Does" -> "¿" # 0.142857142857
+t."Memphis" -> "Memphis" # 1.0
+t."day" -> "siguiente" # 1.0
+t."Early" -> "Vuelos" "de" # 1.0
+t."aircraft" -> "avión" # 0.25
+t."aircraft" -> "aeronave" # 0.25
+t."aircraft" -> "tipo" # 0.25
+t."aircraft" -> "de" "aviones" # 0.25
+t."Atlanta" -> "Atlanta" # 1.0
+t."departs" -> "se" "aparta" # 1.0
+t."meal" -> "comida" # 1.0
+t."that" -> "que" # 0.92
+t."that" -> "esa" # 0.04
+t."that" -> "ese" # 0.04
+t."back" -> "regreso" # 1.0
+t."T" -> "T" # 1.0
+t."After" -> "Después" # 1.0
+t."travel" -> "viajar" # 1.0
+t."seating" -> "número" # 1.0
+t."business" -> "las" # 1.0
+t."restrictions" -> "Qué" "restricciones" # 1.0
+t."Michigan" -> "Michigan" # 1.0
+t."second" -> "segunda" # 1.0
+t."San" -> "San" # 0.965517241379
+t."San" -> "San" "San" # 0.0344827586207
+t."be" -> "sea" # 0.5
+t."be" -> "ser" # 0.5
+t."twenty" -> "años" "de" # 0.5
+t."twenty" -> "veintiséis" # 0.5
+t."Louis" -> "Louis" # 1.0
+t."latest" -> "más" "reciente" # 0.333333333333
+t."latest" -> "último" # 0.666666666667
+t."transportation" -> "terrestre" # 0.714285714286
+t."transportation" -> "transporte" # 0.142857142857
+t."transportation" -> "tierra" # 0.142857142857
+t."before" -> "antes" "las" # 0.692307692308
+t."before" -> "las" "antes" # 0.0769230769231
+t."before" -> "los" "antes" # 0.0769230769231
+t."before" -> "antes" "de" # 0.153846153846
+t."Las" -> "Las" # 1.0
+t."Wednesday" -> "Miércoles" # 0.0666666666667
+t."Wednesday" -> "miércoles" # 0.933333333333
+t."trip" -> "y" "vuelta" # 0.882352941176
+t."trip" -> "vuelta" "y" # 0.117647058824
+t."less" -> "menos" # 1.0
+t."is" -> "es" # 0.967741935484
+t."is" -> "está" # 0.0322580645161
+t."one" -> "un" # 0.0384615384615
+t."one" -> "billete" "de" # 0.0384615384615
+t."one" -> "ciento" "un" # 0.0384615384615
+t."one" -> "una" # 0.423076923077
+t."one" -> "primero" # 0.0384615384615
+t."one" -> "Uno" # 0.0769230769231
+t."one" -> *e* # 0.115384615385
+t."one" -> "uno" # 0.115384615385
+t."one" -> "uno" "uno" # 0.0769230769231
+t."one" -> "tal" # 0.0384615384615
+t."numbers" -> "números" "vuelo" # 0.666666666667
+t."numbers" -> "números" # 0.333333333333
+t."or" -> "u" # 0.142857142857
+t."or" -> "o" # 0.857142857143
+t."Dulles" -> "Dulles" # 1.0
+t."more" -> "no" "más" # 1.0
+t."between" -> "vuelos" "entre" # 0.153846153846
+t."between" -> "entre" # 0.846153846154
+t."Minneapolis" -> "Minneapolis" # 1.0
+t."a.m" -> "a.m" # 0.625
+t."a.m" -> "am" # 0.375
+t."noon" -> "del" "mediodía" # 1.0
+t."from" -> "desde" "de" # 0.00462962962963
+t."from" -> "de" # 0.532407407407
+t."from" -> "desde" # 0.425925925926
+t."from" -> "de" "de" "de" # 0.00462962962963
+t."from" -> "por" # 0.00462962962963
+t."from" -> "de" "de" # 0.0277777777778
+t."six" -> "seis" "seis" # 0.222222222222
+t."six" -> "seis" # 0.666666666667
+t."six" -> "veintiséis" # 0.111111111111
+t."Shortest" -> "Vuelo" "más" # 0.333333333333
+t."Shortest" -> "Más" "corto" # 0.333333333333
+t."Shortest" -> "más" "cortas" # 0.333333333333
+t."Ohio" -> "Ohio" # 1.0
+t."United" -> "United" # 1.0
+t."Tell" -> "Háblame" # 1.0
+t."Charlotte" -> "Charlotte" # 1.0
+t."?" -> "?" # 1.0
+t."Milwaukee" -> "Milwaukee" # 0.944444444444
+t."Milwaukee" -> "Milwaukee" "Milwaukee" "Milwaukee" # 0.0555555555556
+t."number" -> "número" "vuelo" # 0.2
+t."number" -> "Número" "vuelo" # 0.2
+t."number" -> "vuelo" # 0.4
+t."number" -> "número" # 0.2
+t."nonstop" -> "sin" "escalas" # 0.642857142857
+t."nonstop" -> "sin" "escalas" "sin" "escalas" # 0.0714285714286
+t."nonstop" -> "escalas" "sin" # 0.0714285714286
+t."nonstop" -> "sin" # 0.0714285714286
+t."nonstop" -> "sin" "parar" # 0.142857142857
+t."frequent" -> "billetes" "de" # 1.0
+t."eighteen" -> "veinte" "los" "dieciocho" # 1.0
+t."fly" -> "volar" # 1.0
+t."price" -> "precio" # 1.0
+t."sixteenth" -> "XVI" # 1.0
+t."Direct" -> "Vuelos" "directos" # 1.0
+t."via" -> "por" # 0.333333333333
+t."via" -> "a" "través" # 0.333333333333
+t."via" -> "través" "a" # 0.333333333333
+t."Friday" -> "viernes" # 0.833333333333
+t."Friday" -> "Viernes" # 0.166666666667
+t."Baltimore" -> "Baltimore" # 1.0
+t."Only" -> "Sólo" # 1.0
+t."arrives" -> "llega" # 1.0
+t."List" -> "Listar" # 0.333333333333
+t."List" -> "Enumerar" # 0.666666666667
+t."they" -> "están" # 1.0
+t."Lake" -> "Lake" # 1.0
+t."which" -> "que" "los" # 1.0
+t."actually" -> "hecho" "me" # 1.0
+t."P" -> "P" # 1.0
+t."at" -> "por" "lo" # 0.111111111111
+t."at" -> "en" # 0.111111111111
+t."at" -> "a" # 0.555555555556
+t."at" -> "al" # 0.111111111111
+t."at" -> "a" "a" # 0.111111111111
+t."weekdays" -> "del" # 0.333333333333
+t."weekdays" -> "viernes" "lunes" "a" # 0.333333333333
+t."weekdays" -> "laborables" # 0.333333333333
+t."p.m" -> "pm" # 0.5
+t."p.m" -> "p.m" # 0.454545454545
+t."p.m" -> "los" "pm" # 0.0454545454545
+t."this" -> "esto" "está" "presente" # 0.2
+t."this" -> "este" # 0.8
+t."Angeles" -> "Angeles" # 0.272727272727
+t."Angeles" -> "Ángeles" # 0.727272727273
+t."other" -> "otro" # 0.5
+t."other" -> "diferencia" # 0.5
+t."departing" -> "saliendo" # 1.0
+t."tomorrow" -> "mañana" # 1.0
+t."Continental" -> "Continental" # 1.0
+t."J" -> "J" # 1.0
+t."arrive" -> "llegar" # 0.5
+t."arrive" -> "los" "llegan" # 0.125
+t."arrive" -> "Qué" "los" "llegan" # 0.125
+t."arrive" -> "llegan" # 0.25
+t."round" -> "ida" # 0.4
+t."round" -> "de" "ida" # 0.466666666667
+t."round" -> "baratos" "ida" # 0.133333333333
+t."Boston" -> "Boston" # 1.0
+t."From" -> "Desde" # 0.4
+t."From" -> "De" # 0.6
+t."Petersburg" -> "Petersburgo" # 1.0
+t."Tacoma" -> "Tacoma" # 1.0
+t."Nonstop" -> "Sin" "parar" # 1.0
+t."I" -> "necesario" # 0.0232558139535
+t."I" -> "necesito" # 0.046511627907
+t."I" -> "Me" # 0.302325581395
+t."I" -> "Estoy" # 0.0232558139535
+t."I" -> "De" # 0.0232558139535
+t."I" -> "Yo" # 0.0232558139535
+t."I" -> "No" "me" # 0.0232558139535
+t."I" -> "Necesito" # 0.279069767442
+t."I" -> "podría" # 0.0232558139535
+t."I" -> "me" # 0.0697674418605
+t."I" -> "Tengo" # 0.116279069767
+t."I" -> "Quiero" # 0.046511627907
+t."next" -> "próximo" # 0.5
+t."next" -> "día" # 0.5
+t."fares" -> "tarifas" # 0.875
+t."fares" -> "baratos" # 0.0625
+t."fares" -> "las" "tarifas" # 0.0625
+t."display" -> "visualizar" # 1.0
+t."Earliest" -> "Apertura" # 1.0
+t."make" -> "hacen" # 0.333333333333
+t."make" -> "Qué" "hacer" # 0.333333333333
+t."make" -> "hacer" # 0.333333333333
+t."eighth" -> "octavo" # 1.0
+t."dinner" -> "la" "cena" # 0.6
+t."dinner" -> "de" # 0.05
+t."dinner" -> "cena" # 0.35
+t."tickets" -> "frecuente" # 1.0
+t."today" -> "hoy" # 0.5
+t."today" -> "actualidad" "en" "la" # 0.5
+t."airfare" -> "pasajes" "aéreos" # 0.6
+t."airfare" -> "pasajes" "avión" # 0.4
+t."'s" -> "El" "'s" # 0.5
+t."'s" -> "'s" # 0.5
+t."Monday" -> "Lunes" # 0.2
+t."Monday" -> "lunes" # 0.8
+t."go" -> "van" # 0.181818181818
+t."go" -> "ir" # 0.818181818182
+t."know" -> "saber" "número" # 1.0
+t."Dallas" -> "Dallas" "Dallas" # 0.0769230769231
+t."Dallas" -> "Dallas" # 0.923076923077
+t."class" -> "clase" # 0.785714285714
+t."class" -> "descuento" # 0.0714285714286
+t."class" -> "inicial" # 0.0714285714286
+t."class" -> "clase" "económica" # 0.0714285714286
+t."La" -> "La" # 1.0
+t."airplane" -> "avión" # 1.0
+t."Arrival" -> "Llegada" # 1.0
+t."oops" -> "Uy" # 1.0
+t."cost" -> *e* # 0.4
+t."cost" -> "costo" "del" # 0.4
+t."cost" -> "costo" # 0.2
+t."have" -> "tienes" # 0.166666666667
+t."have" -> "de" "servicio" # 0.0833333333333
+t."have" -> "tienen" # 0.416666666667
+t."have" -> "Tengo" # 0.25
+t."have" -> "tienen" "de" # 0.0833333333333
+t."City" -> "York" # 0.310344827586
+t."City" -> "City" # 0.689655172414
+t."International" -> "el" # 0.5
+t."International" -> "International" # 0.5
+t."these" -> "ellas" # 0.105263157895
+t."these" -> "estos" # 0.894736842105
+t."here" -> "aquí" # 1.0
+t."N" -> "N" # 1.0
+t."airlines" -> "las" "compañías" "aéreas" # 0.333333333333
+t."airlines" -> "que" "las" "aerolíneas" # 0.666666666667
+t."'d" -> "gustaría" # 0.6
+t."'d" -> "me" "gustaría" # 0.1
+t."'d" -> "me" # 0.3
+t."restriction" -> "restricción" # 1.0
+t."Ontario" -> "Ontario" # 1.0
+t."'m" -> "estoy" # 1.0
+t."Airlines" -> "Airlines" # 1.0
+t."Are" -> "Son" # 1.0
+t."." -> "." # 1.0
+t."much" -> "Cuánto" # 1.0
+t."Do" -> "No" # 0.25
+t."Do" -> "¿" # 0.75
+t."use" -> "utilizando" # 1.0
+t."served" -> "sirven" # 0.333333333333
+t."served" -> "sirvió" # 0.333333333333
+t."served" -> "comidas" # 0.333333333333
+t."Next" -> "Próximos" "del" # 1.0
+t."Is" -> "Se" # 0.142857142857
+t."Is" -> "¿" "Es" # 0.285714285714
+t."Is" -> "Es" # 0.285714285714
+t."Is" -> "¿" # 0.285714285714
+t."Cincinnati" -> "Cincinnati" # 1.0
+t."Which" -> "Que" # 0.181818181818
+t."Which" -> "Cuáles" # 0.030303030303
+t."Which" -> "Lo" "nos" # 0.030303030303
+t."Which" -> "Cual" # 0.0606060606061
+t."Which" -> "¿" # 0.69696969697
+t."No" -> "No" "hay" # 1.0
+t."leg" -> "etapa" "etapa" # 1.0
+t."could" -> "podría" # 1.0
+t."time" -> "hora" # 0.5
+t."time" -> "hora" "del" "almuerzo" # 0.5
+t."Toronto" -> "Toronto" # 1.0
+t."like" -> "gustaría" # 0.882352941176
+t."like" -> "quieran" # 0.0588235294118
+t."like" -> "volver" # 0.0588235294118
+t."Flight" -> "Número" # 0.142857142857
+t."Flight" -> "Vuelo" # 0.571428571429
+t."Flight" -> "Los" # 0.285714285714
+t."Saturday" -> "sábado" # 1.0
+t."Southwest" -> "Southwest" # 1.0
+t."snack" -> "merienda" # 1.0
+t."Coach" -> "En" "turista" # 0.666666666667
+t."Coach" -> "Vuelos" "en" # 0.333333333333
+t."prefer" -> "prefiero" # 1.0
+t."abbreviation" -> "abreviatura" # 1.0
+t."Price" -> "Precio" # 1.0
+t."U" -> "U" # 1.0
+t."there" -> "ahí" # 0.05
+t."there" -> "hay" # 0.85
+t."there" -> "Hay" # 0.1
+t."Indianapolis" -> "Indianápolis" # 0.363636363636
+t."Indianapolis" -> "Indianapolis" # 0.636363636364
+t."arriving" -> "llegar" # 0.307692307692
+t."arriving" -> "lleguen" # 0.0769230769231
+t."arriving" -> "que" "llegan" # 0.230769230769
+t."arriving" -> "los" "que" "llegan" # 0.0769230769231
+t."arriving" -> "lleguen" "que" # 0.0769230769231
+t."arriving" -> "procedentes" # 0.153846153846
+t."arriving" -> "que" "lleguen" # 0.0769230769231
+t."New" -> "la" "Nueva" # 0.16
+t."New" -> "Nueva" # 0.84
+t."C" -> "C" # 1.0
+t."daily" -> "diarias" # 0.25
+t."daily" -> "diaria" # 0.5
+t."daily" -> "días" "todos" # 0.25
+t."should" -> "debe" # 0.75
+t."should" -> "debería" # 0.25
+t."Alaska" -> "Alaska" # 1.0
+t."me" -> "todas" # 0.0121951219512
+t."me" -> "Dame" # 0.0121951219512
+t."me" -> "visitarme" # 0.0243902439024
+t."me" -> "Muéstrame" "los" # 0.0365853658537
+t."me" -> "Háblame" # 0.0121951219512
+t."me" -> "Muéstrenme" # 0.0121951219512
+t."me" -> "demuestran" # 0.0121951219512
+t."me" -> "mostrar" # 0.0121951219512
+t."me" -> "sólo" # 0.0121951219512
+t."me" -> "Muéstrame" # 0.841463414634
+t."me" -> "muéstrame" # 0.0121951219512
+t."home" -> "casa" # 1.0
+t."Book" -> "Reservar" "ese" # 1.0
+t."cancel" -> "Cancelar" # 1.0
+t."get" -> "conseguir" # 1.0
+t."list" -> "Anote" # 0.25
+t."list" -> "favor" # 0.25
+t."list" -> "favor" "escriba" # 0.25
+t."list" -> "enumerar" # 0.25
+t."into" -> "en" # 1.0
+t."lowest" -> "la" "más" "baja" # 1.0
+t."Tuesday" -> "Martes" # 0.166666666667
+t."Tuesday" -> "martes" # 0.833333333333
+t."do" -> "tienes" # 0.4
+t."do" -> "cuestan" # 0.2
+t."do" -> "dónde" # 0.2
+t."do" -> "están" # 0.2
+t."Zero" -> "detiene" "Zero" # 1.0
+t."morning" -> "por" "la" "mañana" # 0.235294117647
+t."morning" -> "mañana" "por" "la" # 0.0588235294118
+t."morning" -> "la" "mañana" # 0.235294117647
+t."morning" -> "la" "mañana" "por" # 0.0588235294118
+t."morning" -> "mañana" # 0.411764705882
+t."fare" -> "costosos" # 0.0526315789474
+t."fare" -> "de" # 0.0526315789474
+t."fare" -> "códigos" "de" # 0.0526315789474
+t."fare" -> "código" "de" # 0.105263157895
+t."fare" -> "económica" # 0.315789473684
+t."fare" -> "tarifa" # 0.421052631579
+t."Round" -> "ida" # 0.5
+t."Round" -> "Transporte" "ida" # 0.5
+t."to" -> "gustaría" # 0.0130434782609
+t."to" -> "intención" "de" # 0.00434782608696
+t."to" -> "disponer" # 0.00434782608696
+t."to" -> "quiero" "a" # 0.00434782608696
+t."to" -> "gustaría" "a" # 0.00434782608696
+t."to" -> "a" # 0.917391304348
+t."to" -> "devolver" # 0.00434782608696
+t."to" -> *e* # 0.0173913043478
+t."to" -> "para" # 0.00434782608696
+t."to" -> "saber" # 0.00434782608696
+t."to" -> "a" "a" # 0.0173913043478
+t."to" -> "a" "gustaría" # 0.00434782608696
+t."flight" -> "de" "corta" # 0.0135135135135
+t."flight" -> "vuelo" "vuelo" # 0.0135135135135
+t."flight" -> "el" # 0.027027027027
+t."flight" -> "vuelo" "misma" "vuelo" # 0.0135135135135
+t."flight" -> "cuatro" "vuelo" # 0.0135135135135
+t."flight" -> "vuelo" # 0.905405405405
+t."flight" -> "vuelo" "de" # 0.0135135135135
+t."Now" -> "Ahora" "necesito" # 1.0
+t."dollars" -> "dólares" # 1.0
+t."than" -> "de" # 1.0
+t."Departure" -> "Salida" # 1.0
+t."first" -> "en" "primer" "lugar" # 0.0909090909091
+t."first" -> "primer" # 0.0909090909091
+t."first" -> "primera" # 0.454545454545
+t."first" -> "costo" # 0.0909090909091
+t."first" -> "primero" # 0.272727272727
+t."no" -> "no" # 1.0
+t."F" -> "F" # 0.4
+t."F" -> "K" # 0.4
+t."F" -> "F" "F" # 0.2
+t."twelve" -> "las" "doce" # 0.2
+t."twelve" -> "de" "mil" # 0.2
+t."twelve" -> "doce" # 0.2
+t."twelve" -> "mil" "de" # 0.2
+t."twelve" -> "de" "las" "doce" # 0.2
+t."serve" -> "sirven" # 0.333333333333
+t."serve" -> "el" "de" "la" # 0.166666666667
+t."serve" -> "servir" # 0.166666666667
+t."serve" -> "de" # 0.166666666667
+t."serve" -> "de" "la" # 0.166666666667
+t."Air" -> "Aire" # 0.666666666667
+t."Air" -> "Air" # 0.333333333333
+t."Washington" -> "Washington" # 1.0
+t."for" -> "para" # 1.0
+t."what" -> "Que" # 0.5
+t."what" -> "¿" "qué" "pasa" "con" # 0.5
+t."three" -> "tres" # 1.0
+t."find" -> "saber" # 0.5
+t."find" -> "encontrar" # 0.5
+t."Phoenix" -> "Phoenix" # 1.0
+t."seven" -> "siete" # 1.0
+t."Newark" -> "Newark" # 1.0
+t."Q" -> "Q" # 1.0
+t."Where" -> "¿" "De" "dónde" "se" # 1.0
+t."Orlando" -> "Orlando" # 1.0
+t."are" -> "Qué" "son" # 0.0740740740741
+t."are" -> "tienen" # 0.037037037037
+t."are" -> "Qué" "se" # 0.037037037037
+t."are" -> "hay" # 0.0740740740741
+t."are" -> "Qué" "hay" # 0.222222222222
+t."are" -> "que" # 0.333333333333
+t."are" -> "Cuáles" "son" # 0.0740740740741
+t."are" -> "son" # 0.111111111111
+t."are" -> "están" # 0.037037037037
+t."Show" -> "Mostrar" # 0.151162790698
+t."Show" -> "Muéstrame" # 0.837209302326
+t."Show" -> "Muéstrenme" # 0.0116279069767
+t."Montreal" -> "Montreal" # 1.0
+t."in" -> "Aeropuertos" "de" # 0.0425531914894
+t."in" -> "en" # 0.63829787234
+t."in" -> "de" # 0.063829787234
+t."in" -> "en" "en" # 0.0425531914894
+t."in" -> "a" # 0.127659574468
+t."in" -> "llegan" # 0.0212765957447
+t."in" -> "por" # 0.063829787234
+t."Long" -> "Long" # 1.0
+t."nineteen" -> "diecinueve" "años" "centenar" # 1.0
+t."Traveling" -> "Viajar" "en" # 1.0
+t."forty" -> "cuarenta" "y" # 1.0
+t."Beach" -> "Beach" # 1.0
+t."after" -> "a" "las" # 0.0625
+t."after" -> "después" "las" # 0.0625
+t."after" -> "las" # 0.0625
+t."after" -> "después" # 0.8125
+t."O" -> "O" # 1.0
+t."direct" -> "directo" # 1.0
+t."Arriving" -> "Al" "llegar" # 1.0
+t."Leaving" -> "Dejando" # 0.75
+t."Leaving" -> "Dejando" "partir" # 0.25
+t."Can" -> "Puede" "que" "me" # 0.5
+t."Can" -> "¿" "Puede" # 0.5
+t."by" -> "por" # 0.666666666667
+t."by" -> "lleguen" "en" # 0.333333333333
+t."about" -> "Qué" "hay" "del" # 0.166666666667
+t."about" -> "Qué" "hay" # 0.166666666667
+t."about" -> "Háblame" "del" # 0.166666666667
+t."about" -> "Qué" "tal" # 0.166666666667
+t."about" -> "Y" # 0.166666666667
+t."about" -> "pasa" "el" # 0.166666666667
+t."mean" -> "refiero" # 1.0
+t."ninth" -> "nueve" # 1.0
+t."D" -> "D" # 1.0
+t."within" -> "dentro" "los" # 1.0
+t."County" -> "Westchester" "laborables" # 0.25
+t."County" -> "Westchester" # 0.25
+t."County" -> "County" # 0.5
+t."them" -> "ellos" # 1.0
+t."out" -> "saber" "número" # 1.0
+t."friend" -> "amigo" "que" # 1.0
+t."flyer" -> "viajero" # 1.0
+t."Paul" -> "Paul" # 0.5
+t."Paul" -> "Pablo" # 0.5
+t."Lowest" -> "Tarifa" "más" "baja" # 1.0
+t."Miami" -> "Miami" # 1.0
+t."with" -> "con" # 1.0
+t."on" -> "el" "en" # 0.0806451612903
+t."on" -> "el" # 0.564516129032
+t."on" -> "vuelos" "de" # 0.0322580645161
+t."on" -> "con" # 0.0161290322581
+t."on" -> "de" # 0.0645161290323
+t."on" -> "en" # 0.209677419355
+t."on" -> "en" "el" # 0.0161290322581
+t."on" -> "en" "en" "el" # 0.0161290322581
+t."show" -> "mostrar" # 0.333333333333
+t."show" -> "demuestran" "vuelos" "nocturnos" # 0.333333333333
+t."show" -> "muéstrame" # 0.333333333333
+t."eleven" -> "once" # 1.0
+t."Morning" -> "Vuelos" "la" "mañana" # 1.0
+t."those" -> "los" # 0.4
+t."those" -> "esos" # 0.2
+t."those" -> "los" "abandonan" # 0.2
+t."those" -> "de" # 0.2
+t."stops" -> "Zero" # 0.2
+t."stops" -> "paradas" "están" # 0.2
+t."stops" -> "paradas" # 0.6
+t."thirty" -> "y" "media" # 0.272727272727
+t."thirty" -> "y" "treinta" # 0.0909090909091
+t."thirty" -> "treinta" # 0.454545454545
+t."thirty" -> "treinta" "de" # 0.181818181818
+t."the" -> "la" "la" # 0.00847457627119
+t."the" -> "El" "la" # 0.00847457627119
+t."the" -> "los" # 0.305084745763
+t."the" -> "el" # 0.322033898305
+t."the" -> "terrestre" # 0.00847457627119
+t."the" -> "al" # 0.00847457627119
+t."the" -> "las" # 0.118644067797
+t."the" -> "el" "el" # 0.0169491525424
+t."the" -> "el" "del" # 0.0169491525424
+t."the" -> "los" "la" # 0.00847457627119
+t."the" -> "la" # 0.177966101695
+t."used" -> "utilizado" # 1.0
+t."Cleveland" -> "Cleveland" # 1.0
+t."Tampa" -> "Tampa" # 1.0
+t."American" -> "American" # 0.916666666667
+t."American" -> "americano" # 0.0833333333333
+t."accept" -> "aceptan" # 1.0
+t."codes" -> "códigos" # 0.5
+t."codes" -> "códigos" "tarifas" # 0.5
+t."available" -> "disponible" # 1.0
+t."airline" -> "aérea" # 0.5
+t."airline" -> "Qué" "la" "línea" "aérea" # 0.5
+t."has" -> "tiene" # 1.0
+t."Diego" -> "Diego" # 1.0
+t."as" -> "tan" "como" # 1.0
+t."mornings" -> "por" "la" "mañana" # 1.0
+t."eight" -> "ocho" # 0.25
+t."eight" -> "las" "ocho" # 0.25
+t."eight" -> "ocho" "las" # 0.5
+t."Airports" -> "Aeropuertos" # 1.0
+t."friends" -> "amigos" # 1.0
+t."Return" -> "Devolver" "los" # 0.5
+t."Return" -> "Devolver" # 0.5
+t."Jose" -> "José" # 1.0
+t."Houston" -> "Houston" "Houston" # 0.0666666666667
+t."Houston" -> "Houston" # 0.933333333333
+t."not" -> "mostrar" # 1.0
+t."o'clock" -> "en" "punto" "pm" # 0.2
+t."o'clock" -> "nueve" # 0.2
+t."o'clock" -> "las" # 0.4
+t."o'clock" -> "punto" "en" # 0.2
+t."you" -> "tienes" # 0.333333333333
+t."you" -> "Puede" "demuestran" # 0.166666666667
+t."you" -> "Gracias" # 0.333333333333
+t."you" -> "Puede" # 0.166666666667
+t."Fares" -> "Las" "tarifas" # 1.0
+t."costs" -> "costes" # 1.0
+t."depart" -> "salida" # 0.142857142857
+t."depart" -> "Qué" "salen" # 0.285714285714
+t."depart" -> "salen" # 0.571428571429
+t."Display" -> "Mostrar" # 1.0
+t."five" -> "cinco" # 0.941176470588
+t."five" -> "cinco" "cinco" # 0.0588235294118
+t."same" -> "compañía" # 1.0
+t."Weekday" -> "lunes" "a" "viernes" # 1.0
+t."Thanks" -> "Gracias" # 1.0
+t."Cheapest" -> "Vuelos" "más" # 0.0714285714286
+t."Cheapest" -> "El" "más" "barato" # 0.428571428571
+t."Cheapest" -> "Tarifa" "más" # 0.357142857143
+t."Cheapest" -> "Más" # 0.142857142857
+t."Thursday" -> "jueves" # 0.7
+t."Thursday" -> "el" "jueves" # 0.1
+t."Thursday" -> "Jueves" # 0.2
+t."lunch" -> "el" # 0.2
+t."lunch" -> "almuerzo" # 0.2
+t."lunch" -> "la" # 0.2
+t."lunch" -> "el" "almuerzo" # 0.2
+t."lunch" -> "almuerzo" "el" # 0.2
+t."only" -> "sólo" # 1.0
+t."Salt" -> "Salt" # 1.0
+t."lives" -> "vive" "vive" # 1.0
+t."and" -> "y" # 1.0
+t."longest" -> "parada" # 1.0
+t."two" -> "dos" # 1.0
+t."K" -> "M" # 0.5
+t."K" -> "K" # 0.5
+t."earliest" -> "anote" # 0.333333333333
+t."earliest" -> "primer" # 0.666666666667
+t."July" -> "Julio" # 0.2
+t."July" -> "julio" # 0.8
+t."early" -> "pronto" # 1.0
+t."meals" -> "vuelos" "comidas" # 0.2
+t."meals" -> "comidas" # 0.8
+t."North" -> "Carolina" "del" "Norte" # 1.0
+t."extra" -> "más" "lo" # 1.0
+t."interested" -> "interesado" # 1.0
+t."better" -> "mejor" # 1.0
+t."leaving" -> "salida" # 0.111111111111
+t."leaving" -> "dejando" # 0.444444444444
+t."leaving" -> "que" # 0.111111111111
+t."leaving" -> "salen" # 0.222222222222
+t."leaving" -> "salir" # 0.111111111111
+t."way" -> "manera" "en" # 0.125
+t."way" -> "billete" # 0.125
+t."way" -> "las" "formas" # 0.125
+t."way" -> "manera" # 0.625
+t."possible" -> "sea" "posible" # 1.0
+t."am" -> "Estoy" # 1.0
+t."reservation" -> "reserva" "en" # 0.5
+t."reservation" -> "reserva" # 0.5
+t."also" -> "también" # 1.0
+t."night" -> "noche" # 0.5
+t."night" -> "por" "la" "noche" # 0.5
+t."during" -> "durante" "los" "días" # 1.0
+t."Nashville" -> "Nashville" # 1.0
+t."it" -> "aeronave" # 0.5
+t."it" -> "hora" # 0.5
+t."would" -> "Me" "que" # 0.111111111111
+t."would" -> "Me" # 0.444444444444
+t."would" -> "costaría" # 0.111111111111
+t."would" -> "haría" # 0.111111111111
+t."would" -> "quieran" # 0.111111111111
+t."would" -> "le" # 0.111111111111
+t."ground" -> "transporte" "tierra" # 0.25
+t."ground" -> "terreno" # 0.25
+t."ground" -> "transporte" # 0.5
+t."Kansas" -> "Kansas" # 1.0
+t."ticket" -> "billete" "ida" # 1.0
+t."least" -> "pasajes" "menos" # 0.333333333333
+t."least" -> "menos" # 0.666666666667
+t."minutes" -> "minutos" # 1.0
+t."kind" -> "Qué" "tipo" # 1.0
+t."Explain" -> "Explicar" # 1.0
+t."code" -> "cuota" # 1.0
+t."Jersey" -> "Jersey" # 0.75
+t."Jersey" -> "Jersey" "Internacional" # 0.25
+t."How" -> "¿" # 1.0
+t."stop" -> "parar" # 0.0769230769231
+t."stop" -> "detienen" # 0.0769230769231
+t."stop" -> "se" "detienen" # 0.153846153846
+t."stop" -> "tope" # 0.0769230769231
+t."stop" -> "parada" "la" # 0.0769230769231
+t."stop" -> "parada" # 0.461538461538
+t."stop" -> "paran" # 0.0769230769231
+t."leave" -> "los" "salen" # 0.3125
+t."leave" -> "salen" # 0.0625
+t."leave" -> "dejar" # 0.3125
+t."leave" -> "salir" # 0.1875
+t."leave" -> "abandonan" # 0.125
+t."Denver" -> "Denver" # 1.0
+t."On" -> "El" # 1.0
+t."Pittsburgh" -> "Pittsburgh" # 1.0
+t."cheapest" -> "tarifas" "más" # 0.333333333333
+t."cheapest" -> "tarifa" "más" # 0.333333333333
+t."cheapest" -> "más" "económicas" # 0.333333333333
+t."plan" -> "la" "intención" # 1.0
+t."please" -> "por" "favor" # 0.5
+t."please" -> "favor" # 0.5
+t."seventeen" -> "las" # 1.0
+t."meant" -> "refiero" "a" "por" # 1.0
+t."Guardia" -> "Guardia" # 1.0
+t."of" -> "del" # 0.0512820512821
+t."of" -> "Cuál" # 0.025641025641
+t."of" -> "de" # 0.410256410256
+t."of" -> "del" "de" # 0.025641025641
+t."of" -> "de" "de" # 0.025641025641
+t."of" -> "tipo" "de" # 0.025641025641
+t."of" -> "Cualquiera" "de" # 0.025641025641
+t."of" -> "Cuál" "de" # 0.410256410256
+t."Oakland" -> "Oakland" # 1.0
+t."Any" -> "Cualquiera" # 0.5
+t."Any" -> "Cualquier" # 0.5
+t."Cost" -> "Costo" # 1.0
+t."Departing" -> "Salidas" # 0.5
+t."Departing" -> "Saliendo" # 0.5
+t."W" -> "W" # 0.833333333333
+t."W" -> "el" "W" # 0.166666666667
+t."discount" -> "descuento" # 1.0
+t."Florida" -> "Florida" # 1.0
+t."each" -> "dentro" # 1.0
+t."All" -> "Todos" "los" # 1.0
+t."fifty" -> "cincuenta" "y" # 0.5
+t."fifty" -> "cincuenta" # 0.5
+t."California" -> "California" # 1.0
+t."Columbus" -> "Columbus" # 1.0
+t."Thank" -> "Gracias" # 1.0
+t."leaves" -> "sale" # 0.5
+t."leaves" -> "que" "deja" # 0.25
+t."leaves" -> "esas" # 0.25
+t."Westchester" -> "el" "condado" # 0.2
+t."Westchester" -> "los" "días" "condado" # 0.2
+t."Westchester" -> "Westchester" # 0.6
+t."Give" -> "Dame" "vuelos" "del" # 1.0
+t."Daily" -> "Vuelos" "diarios" # 1.0
+t."coach" -> "entrenador" "de" # 0.5
+t."coach" -> "turista" "de" # 0.5
+t."making" -> "haciendo" # 1.0
+t."fourteen" -> "los" "catorce" "años" # 1.0
+t."nine" -> "nueve" # 1.0
+t."thousand" -> "de" # 1.0
+t."Vegas" -> "Vegas" # 1.0
+t."What" -> "¿" "Cuál" # 0.0707070707071
+t."What" -> "Lo" # 0.676767676768
+t."What" -> "Cuál" # 0.0909090909091
+t."What" -> "¿" # 0.161616161616
+t."afternoon" -> "la" "tarde" "por" # 0.125
+t."afternoon" -> "la" "tarde" # 0.375
+t."afternoon" -> "por" "la" "tarde" # 0.25
+t."afternoon" -> "tarde" # 0.25
+t."Saint" -> "San" # 0.5
+t."Saint" -> "Saint" # 0.5
+t."many" -> "Cuántas" # 1.0
+t."last" -> "durar" # 0.2
+t."last" -> "la" "última" # 0.4
+t."last" -> "último" "para" # 0.2
+t."last" -> "pasado" # 0.2
