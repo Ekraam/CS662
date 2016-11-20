@@ -8,13 +8,13 @@ shakespeareFile.close()
 translationFile.close()
 
 playName = ''
+tempPlayName = ''
 pageNum = 'Start'
 
 shakespeareList = []
 translationList = []
 
 countLine = 0
-pos = 0
 
 # compiling list for shakespeare file
 for idx in range(0, len(shakespeareLines)):
@@ -23,24 +23,24 @@ for idx in range(0, len(shakespeareLines)):
     line = line.strip()
     
     if line.find('--%%-- Play:')>=0:
-        playName = line.replace('--%%--', '')
-        playName = playName.replace('Play:', '')
-        playName = playName.strip()
+        tempPlayName = line.replace('--%%--', '')
+        tempPlayName = tempPlayName.replace('Play:', '')
+        tempPlayName = tempPlayName.strip()
 
     elif line.find('--%%-- pageNum')>=0:
         shakespeareList.extend([(playName, pageNum, countLine)])
-        pos += 1
         countLine = 0
         pageNum = line.replace('--%%--', '')
         pageNum = pageNum.replace('pageNum:', '')
         pageNum = pageNum.strip()
+        playName = tempPlayName
 
     elif len(line)>0:
         countLine += 1
 
-pos = 0
 countLine = 0
 playName = ''
+tempPlayName = ''
 pageNum = 'Start'
 
 # compiling list for translation file
@@ -50,17 +50,17 @@ for idx in range(0, len(translationLines)):
     line = line.strip()
     
     if line.find('--%%-- Play:')>=0:
-        playName = line.replace('--%%--', '')
-        playName = playName.replace('Play:', '')
-        playName = playName.strip()
+        tempPlayName = line.replace('--%%--', '')
+        tempPlayName = tempPlayName.replace('Play:', '')
+        tempPlayName = tempPlayName.strip()
 
     elif line.find('--%%-- pageNum')>=0:
         translationList.extend([(playName, pageNum, countLine)])
-        pos += 1
         countLine = 0
         pageNum = line.replace('--%%--', '')
         pageNum = pageNum.replace('pageNum:', '')
         pageNum = pageNum.strip()
+        playName = tempPlayName
 
     elif len(line)>0:
         countLine += 1
@@ -75,6 +75,12 @@ else:
     for idx in range(0, len(translationList)):
         shakespeareCount = shakespeareList[idx][2]
         translationCount = translationList[idx][2]
+
+        shInf = shakespeareList[idx]
+        tnInf = translationList[idx]
+        if shInf[0]=='msnd' and shInf[1]==180:
+            print shInf
+            print tnInf
 
         if shakespeareCount!=translationCount:
             print 'Mismatched number of lines found in:'

@@ -1,6 +1,6 @@
 # this script will find the non alphabetic characters in a file
 
-inpFile = open('./translation.raw', 'r')
+inpFile = open('./shakespeare.raw', 'r')
 
 specialSet = set()
 
