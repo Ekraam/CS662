@@ -7,7 +7,7 @@
 <script type='text/javascript' src='//cdn.districtm.ca/v4.0.header.min.js'></script>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="shortcut icon" href="http://img.sparknotes.com/images/new_global/new_favicon.ico" />  
-		<!-- 13 -->
+		<!-- 14 -->
 		    <script src="//img.sparknotes.com/js/redirection_mobile.min.js"></script> 
     <script>
        SA.redirection_mobile ({
@@ -19,7 +19,7 @@
 		<title>No Fear Shakespeare: Twelfth Night: Act 5, Scene 1, Page 18</title>
 <meta name="description" content=""></meta>
 <meta name="keywords" content=""></meta>
-				<link rel='stylesheet' href='http://img.sparknotes.com/css/2013/styles.css?rev=1110a1'/>
+				<link rel='stylesheet' href='http://img.sparknotes.com/css/2013/styles.css?rev=1117a1'/>
 		<!--[if IE 6]><link rel="stylesheet" type="text/css" href="http://img.sparknotes.com/css/2013/styleIE7.css" /><![endif]-->   
 	   	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="http://img.sparknotes.com/css/2013/styleIE7.css" /><![endif]-->   
 	    <!--[if IE 8]><link rel="stylesheet" type="text/css" href="http://img.sparknotes.com/css/2013/styleIE8.css" /><![endif]-->  
@@ -747,17 +747,33 @@ var conf=
 	 
 	    
 	    	    <div class="clearfix media sidebar-media ">
-	 		<a href="http://bit.ly/2eGimGv"><img class="fixed-media" src="http://img.sparknotes.com/content/sparklife/sparktalk/FantasticBeastsScriptStudy.jpg	" /></a>      
+	 		<a href="http://bit.ly/2eOEHBS"><img class="fixed-media" src="http://img.sparknotes.com/content/sparklife/sparktalk/poedameroninhufflepuffSGC.jpg" /></a>      
 	        	<div class="media-text">
-	        	    <h4 class="semi-bold"><a href="http://bit.ly/2eGimGv">Got burning questions about <em>Fantastic Beasts</em>? Pre-order the script RIGHT NOW & get all the answers by Friday! </a></h4>
+	        	    <h4 class="semi-bold"><a href="http://bit.ly/2eOEHBS">We sorted <em>Force Awakens</em> characters into Hogwarts houses to create the hottest fandom ever</a></h4>
 	    		</div>    
 	        	    </div>	
 	 
 	    
 	    	    <div class="clearfix media sidebar-media ">
-	 		<a href="http://bit.ly/2fxNPKq"><img class="fixed-media" src="http://img.sparknotes.com/content/sparklife/sparktalk/hermionepotionsclassperfectionist.jpg" /></a>      
+	 		<a href="http://bit.ly/2fDJAg3"><img class="fixed-media" src="http://img.sparknotes.com/content/sparklife/sparktalk/FantasticBeastsScriptStudy.jpg	" /></a>      
 	        	<div class="media-text">
-	        	    <h4 class="semi-bold"><a href="http://bit.ly/2fxNPKq">Are you a perfectionist? </a></h4>
+	        	    <h4 class="semi-bold"><a href="http://bit.ly/2fDJAg3">6 spoiler-free reasons you MUST see <em>Fantastic Beasts & Where to Find Them</em> this weekend </a></h4>
+	    		</div>    
+	        	    </div>	
+	 
+	    
+	    	    <div class="clearfix media sidebar-media ">
+	 		<a href="http://bit.ly/2f518xM"><img class="fixed-media" src=" http://img.sparknotes.com/content/sparklife/sparktalk/gilmore_girls_newspaper_sgc.jpg" /></a>      
+	        	<div class="media-text">
+	        	    <h4 class="semi-bold"><a href="http://bit.ly/2f518xM">10 questions that will seriously impress your English teacher</a></h4>
+	    		</div>    
+	        	    </div>	
+	 
+	    
+	    	    <div class="clearfix media sidebar-media ">
+	 		<a href="http://bit.ly/2f8Taac"><img class="fixed-media" src=" http://img.sparknotes.com/content/sparklife/sparktalk/nov17voldemortprotagonist1_sgc.jpg" /></a>      
+	        	<div class="media-text">
+	        	    <h4 class="semi-bold"><a href="http://bit.ly/2f8Taac">If Voldemort had been the main character of the <em>Harry Potter</em> series</a></h4>
 	    		</div>    
 	        	    </div>	
 	 
@@ -766,6 +782,14 @@ var conf=
 	 		<a href="http://bit.ly/2f5ek9o"><img class="fixed-media" src="http://img.sparknotes.com/content/sparklife/sparktalk/billweasleydefenseagainstdarkarts.jpg" /></a>      
 	        	<div class="media-text">
 	        	    <h4 class="semi-bold"><a href="http://bit.ly/2f5ek9o">7 Defense Against the Dark Arts professors that the <em>Harry Potter</em> books left out </a></h4>
+	    		</div>    
+	        	    </div>	
+	 
+	    
+	    	    <div class="clearfix media sidebar-media ">
+	 		<a href="http://bit.ly/2fxNPKq"><img class="fixed-media" src="http://img.sparknotes.com/content/sparklife/sparktalk/hermionepotionsclassperfectionist.jpg" /></a>      
+	        	<div class="media-text">
+	        	    <h4 class="semi-bold"><a href="http://bit.ly/2fxNPKq">Are you a perfectionist? </a></h4>
 	    		</div>    
 	        	    </div>	
 	 
@@ -787,33 +811,9 @@ var conf=
 	 
 	    
 	    	    <div class="clearfix media sidebar-media ">
-	 		<a href="http://bit.ly/2g3gsjJ"><img class="fixed-media" src=" http://img.sparknotes.com/content/sparklife/sparktalk/bloggingtheodyssey300pic_a1sgc.jpg" /></a>      
-	        	<div class="media-text">
-	        	    <h4 class="semi-bold"><a href="http://bit.ly/2g3gsjJ">We're recapping <em>The Odyssey</em> to make English class bearable </a></h4>
-	    		</div>    
-	        	    </div>	
-	 
-	    
-	    	    <div class="clearfix media sidebar-media ">
-	 		<a href="http://bit.ly/2fOtfmN"><img class="fixed-media" src=" http://img.sparknotes.com/content/sparklife/sparktalk/minigryffindormoodboard.jpg" /></a>      
-	        	<div class="media-text">
-	        	    <h4 class="semi-bold"><a href="http://bit.ly/2fOtfmN">These feminist Hogwarts house moodboards are absolutely gorgeous </a></h4>
-	    		</div>    
-	        	    </div>	
-	 
-	    
-	    	    <div class="clearfix media sidebar-media ">
 	 		<a href="http://bit.ly/2fOqQZC"><img class="fixed-media" src="http://img.sparknotes.com/content/sparklife/sparktalk/awkwardharrypottersgcpromo.jpg" /></a>      
 	        	<div class="media-text">
 	        	    <h4 class="semi-bold"><a href="http://bit.ly/2fOqQZC">The 11 most awkward moments in fiction </a></h4>
-	    		</div>    
-	        	    </div>	
-	 
-	    
-	    	    <div class="clearfix media sidebar-media ">
-	 		<a href="http://bit.ly/2eX4HqR"><img class="fixed-media" src="http://img.sparknotes.com/content/sparklife/sparktalk/hppantonestudy.jpg	" /></a>      
-	        	<div class="media-text">
-	        	    <h4 class="semi-bold"><a href="http://bit.ly/2eX4HqR">Can you pass this close-watch test of the Harry Potter movies? </a></h4>
 	    		</div>    
 	        	    </div>	
 		

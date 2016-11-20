@@ -8,6 +8,45 @@ rawTranslation = open('translation.raw', 'w')
 
 endDelimiter = '</div>'
 
+tempString = ''
+
+# recursive function to remove extra links in the page content
+def removeLinks():
+    global tempString
+
+    linkStartPos = tempString.find('<a href')
+    linkEndPos = tempString.find('</span>')
+    subString = tempString[linkStartPos:linkEndPos+7]
+    tempString = tempString.replace(subString, '')
+    tempString = tempString.replace('</a>', '')
+
+    if tempString.find('<a href')>=0:
+        removeLinks()
+
+# recursive function to remove italicised sections
+def removeItalics():
+    global tempString
+
+    linkStartPos = tempString.find('<i>')
+    linkEndPos = tempString.find('</i>')
+    subString = tempString[linkStartPos:linkEndPos+4]
+    tempString = tempString.replace(subString, '')
+
+    if tempString.find('<i>')>=0:
+        removeItalics()
+
+# recursive function to remove bold sections
+def removeBold():
+    global tempString
+
+    linkStartPos = tempString.find('<b>')
+    linkEndPos = tempString.find('</b>')
+    subString = tempString[linkStartPos:linkEndPos+4]
+    tempString = tempString.replace(subString, '')
+
+    if tempString.find('<b>')>=0:
+        removeBold()
+
 for play in playNames:
 
     print ('Reading play: '+play)
@@ -18,7 +57,7 @@ for play in playNames:
     endPage = int(pageRange[playNames.index(play)].split('-')[1]) 
 
     for page in range(startPage, endPage+1, 2):
-        
+
         print ('page number: '+str(page))
         rawShakespeare.write('--%%-- pageNum: '+str(page)+' --%%--\n \n')
         rawTranslation.write('--%%-- pageNum: '+str(page)+' --%%--\n \n')
@@ -117,8 +156,8 @@ for play in playNames:
                 translationLine = translationLine.replace('&ecirc;', 'e')
                 shakespeareLine = shakespeareLine.replace('&icirc;', 'i')
                 translationLine = translationLine.replace('&icirc;', 'i')
-                shakespeareLine = shakespeareLine.replace('&gt;', '>')
-                translationLine = translationLine.replace('&gt;', '>')
+                shakespeareLine = shakespeareLine.replace('&gt;', ' ')
+                translationLine = translationLine.replace('&gt;', ' ')
                 shakespeareLine = shakespeareLine.replace('&amp;', '&')
                 translationLine = translationLine.replace('&amp;', '&')
                 shakespeareLine = shakespeareLine.replace('&iuml;', 'i')
@@ -130,6 +169,44 @@ for play in playNames:
                 shakespeareLine = shakespeareLine.strip()
                 translationLine = translationLine.strip()
 
+                # remove extra comments
+
+                if translationLine.find('<a href')>=0:
+                    tempString = translationLine
+                    removeLinks()
+                    translationLine = tempString
+
+                if shakespeareLine.find('<a href')>=0:
+                    tempString = shakespeareLine
+                    removeLinks()
+                    shakespeareLine = tempString
+                
+                # remove italicized
+
+                if translationLine.find('<i>')>=0:
+                    tempString = translationLine
+                    removeItalics()
+                    translationLine = tempString
+
+                if shakespeareLine.find('<i>')>=0:
+                    tempString = shakespeareLine
+                    removeItalics()
+                    shakespeareLine = tempString
+
+                # remove messengers
+
+                if translationLine.find('<b>')>=0:
+                    tempString = translationLine
+                    removeBold()
+                    translationLine = tempString
+
+                if shakespeareLine.find('<b>')>=0:
+                    tempString = shakespeareLine
+                    removeBold()
+                    shakespeareLine = tempString
+
+                tempString = ''
+                
                 # write the lines to respective files
                 rawShakespeare.write(shakespeareLine+'\n \n')
                 rawTranslation.write(translationLine+'\n \n')
@@ -139,7 +216,6 @@ for play in playNames:
                 
             else:
                 i += 1
-
 
 
 

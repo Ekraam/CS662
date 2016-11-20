@@ -1,0 +1,7 @@
+Nay, hear them, Antony.	No, listen to it, Antony.	0.885714
+Fulvia perchance is angry.	Perhaps Fulvia is angry with you.	1.4375
+Or who knows If the scarce-bearded Caesar have not sent His powerful mandate to you,	Who knows, maybe the baby-faced Caesar has orders for you:	0.719455
+"Do this, or this. ~~~ Take in that kingdom, and enfranchise that.	"Do this, do that; conquer that kingdom, liberate this one.	0.363235
+Perform 't, or else we damn thee.	Do it or we'll condemn you.	0.663354
+"	"	1.8
+		0.3
